@@ -1,68 +1,170 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
+/*-----------------------------------------------------------------------------------*/
+/* line 10, ../sass/_index.scss */
+section.first_fold {
+  position: relative;
+  z-index: 1;
+  background: url("../img/ff-bg-still.jpg");
+  background-size: cover;
 }
-
-/* line 22, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
+/* line 16, ../sass/_index.scss */
+section.first_fold div.ff_bg {
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: .5;
+  position: absolute;
 }
-
-/* line 24, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
+/* line 24, ../sass/_index.scss */
+section.first_fold div.ff_content {
+  width: 60%;
+  height: 30%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 15;
+  position: absolute;
   text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
+  color: white;
+  font-size: 1em;
+}
+/* line 40, ../sass/_index.scss */
+section.first_fold div.ff_content .main_color {
+  color: #eea500;
+}
+/* line 45, ../sass/_index.scss */
+section.first_fold video.bgvideo {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto -5px;
 }
 
-/* line 30, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
+/*-----------------------------------------------------------------------------------*/
+/* line 58, ../sass/_index.scss */
+.mums_uzticas {
+  height: 160px;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
 }
-/* line 103, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
+/* line 65, ../sass/_index.scss */
+.mums_uzticas div.mums_uzticas_wrapper {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+/* line 73, ../sass/_index.scss */
+.mums_uzticas img {
+  height: 70%;
+  align-self: center;
+}
+/* line 78, ../sass/_index.scss */
+.mums_uzticas span {
+  margin: 0 50px;
+}
+/* line 82, ../sass/_index.scss */
+.mums_uzticas h1 {
+  margin: 0;
+  align-self: center;
+  color: #404040;
 }
 
-/* line 32, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
+/*-----------------------------------------------------------------------------------*/
+/* line 96, ../sass/_index.scss */
+#google_map {
+  width: 100%;
+  height: 600px;
+  margin: 0;
 }
 
-/* line 116, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
+/* line 1, ../sass/_pakalpojumi.scss */
+.testp {
+  background: lightblue;
+  height: 100vh;
+  width: 100%;
+}
+
+/* line 1, ../sass/_cenas.scss */
+.testc {
+  background: lightcoral;
+  width: 100%;
+  height: 100vh;
+}
+
+/* line 12, ../sass/global.scss */
+body {
+  background: green;
+}
+
+/* line 16, ../sass/global.scss */
+* {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* line 25, ../sass/global.scss */
+header {
+  background: black;
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  z-index: 10;
+}
+/* line 34, ../sass/global.scss */
+header div.content_wrapper {
+  width: 80%;
+  height: 100%;
+  display: flex;
+}
+/* line 40, ../sass/global.scss */
+header div.content_wrapper div.logo {
+  height: 100%;
+  width: 300px;
+  margin-right: auto;
+}
+/* line 46, ../sass/global.scss */
+header div.content_wrapper div.logo img {
+  width: 60%;
+  margin: 9px 0 0;
+}
+/* line 52, ../sass/global.scss */
+header div.content_wrapper nav.main_nav {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+}
+/* line 59, ../sass/global.scss */
+header div.content_wrapper nav.main_nav a {
+  align-self: center;
+  margin-left: 35px;
+  font-size: .9em;
+  color: #ebebeb;
+  transition: 0.15s;
+}
+/* line 66, ../sass/global.scss */
+header div.content_wrapper nav.main_nav a:hover {
+  color: #eea500;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* line 79, ../sass/global.scss */
+footer {
+  width: 100%;
+  height: 200px;
+  background: black;
+  color: white;
+  margin: 0;
+  text-align: center;
+  padding-top: 50px;
+}
+/* line 88, ../sass/global.scss */
+footer h1 {
+  margin: 0;
 }

@@ -1,12 +1,12 @@
-var Riga = new google.maps.LatLng(56.925449, 24.105624);
-var GalerijaRiga = new google.maps.LatLng(56.925449, 24.105624);
+var Jelgava = new google.maps.LatLng(56.687807, 23.795100);
+var Krown = new google.maps.LatLng(56.687807, 23.795100);
 var marker;
 var map;
 
 function initialize() {
     var mapOptions = {
         zoom: 15,
-        center: Riga,
+        center: Jelgava,
         navigationControl: false,
         mapTypeControl: false,
         scaleControl: false,
@@ -20,7 +20,7 @@ function initialize() {
         map:map,
         draggable:true,
         animation: google.maps.Animation.DROP,
-        position: GalerijaRiga
+        position: Krown
     });
     google.maps.event.addListener(marker, 'click', toggleBounce);
 }
