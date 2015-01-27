@@ -1,5 +1,4 @@
-$main_color: #eea500;
-$main_color-mono-light: #ebebeb;
+@import "imports.scss";
 
 
 
@@ -36,6 +35,9 @@ section.first_fold {
     color: white;
     font-size: 1em;
 
+    h1 {
+      margin: 20px 0;
+    }
 
     .main_color {
       color: $main_color;
@@ -56,7 +58,7 @@ section.first_fold {
 
 
 .mums_uzticas {
-  height: 160px;
+  height: auto;
   width: 100%;
   background: white;
   display: flex;
@@ -68,10 +70,12 @@ section.first_fold {
     //background: green;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin: 25px 0;
   }
 
   img {
-    height: 70%;
+    width: 100%;
     align-self: center;
   }
 
@@ -79,13 +83,87 @@ section.first_fold {
     margin: 0 50px;
   }
 
-  h1 {
+  h1 > span {
     margin: 0;
     align-self: center;
-    color: #404040;
+    color: $main_color-dark-grey;
+    font-size: .8em;
+  }
+  h1 {
+    margin: 0;
   }
 }
 
+
+
+//REVIEWS
+/*-----------------------------------------------------------------------------------*/
+
+section.review {
+  width: 100%;
+  height: 700px;
+  background: url("../img/pattern-dark.png");
+  display: flex;
+  justify-content: center;
+  color: $main_color-mono-light;
+
+  p {
+    color: $main_color-medium-grey;
+  }
+
+  div.review_wrapper {
+    width: 40%;
+    height: 500px;
+    //background: green;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-self: center;
+
+    &>div {
+      width: 100%;
+      text-align: center;
+      display: flex;
+
+      h1 {
+        align-self: center;
+      }
+    }
+
+    div.review_data {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      &>div {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 150px;
+        align-self: center;
+      }
+
+      div.review_name {
+        text-align: left;
+        margin-left: 50px;
+        align-self: center;
+      }
+    }
+
+    div.review_img {
+      height: 150px;
+      width: 150px;
+      align-self: center;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 100px;
+      }
+    }
+  }
+}
 
 
 

@@ -1,0 +1,35 @@
+@import "compass";
+
+@import "../img/icons/*.png";
+@include all-icons-sprites;
+
+
+$main_color: #f8c235;
+$main_color-mono-light: #f4f4f4;
+$main_color-dark-grey: #282a2b;
+$main_color-medium-grey: #83898c;
+
+
+
+
+body {
+  background: green;
+}
+
+* {
+  text-decoration: none;
+  font-size: 20px;
+  list-style: none;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+span.standout {
+  color: $main_color;
+  font-size: 1em;
+}

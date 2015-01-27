@@ -1,12 +1,71 @@
+/* line 88, ../img/icons/*.png */
+.icons-sprite, .icons-fb, .icons-g, .icons-tw {
+  background-image: url('../img/../img/icons-s836e8c8737.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-fb {
+  background-position: 0 -64px;
+}
+/* line 59, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-fb:hover, .icons-fb.fb-hover {
+  background-position: 0 0;
+}
+
+/* line 84, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-g {
+  background-position: 0 -192px;
+}
+/* line 59, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-g:hover, .icons-g.g-hover {
+  background-position: 0 -128px;
+}
+
+/* line 84, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-tw {
+  background-position: 0 -320px;
+}
+/* line 59, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-tw:hover, .icons-tw.tw-hover {
+  background-position: 0 -256px;
+}
+
+/* line 15, ../sass/_imports.scss */
+body {
+  background: green;
+}
+
+/* line 19, ../sass/_imports.scss */
+* {
+  text-decoration: none;
+  font-size: 20px;
+  list-style: none;
+}
+
+/* line 25, ../sass/_imports.scss */
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 32, ../sass/_imports.scss */
+span.standout {
+  color: #f8c235;
+  font-size: 1em;
+}
+
 /*-----------------------------------------------------------------------------------*/
-/* line 10, ../sass/_index.scss */
+/* line 9, ../sass/_index.scss */
 section.first_fold {
   position: relative;
   z-index: 1;
   background: url("../img/ff-bg-still.jpg");
   background-size: cover;
 }
-/* line 16, ../sass/_index.scss */
+/* line 15, ../sass/_index.scss */
 section.first_fold div.ff_bg {
   width: 100%;
   height: 100%;
@@ -14,7 +73,7 @@ section.first_fold div.ff_bg {
   opacity: .5;
   position: absolute;
 }
-/* line 24, ../sass/_index.scss */
+/* line 23, ../sass/_index.scss */
 section.first_fold div.ff_content {
   width: 60%;
   height: 30%;
@@ -29,11 +88,15 @@ section.first_fold div.ff_content {
   color: white;
   font-size: 1em;
 }
-/* line 40, ../sass/_index.scss */
-section.first_fold div.ff_content .main_color {
-  color: #eea500;
+/* line 38, ../sass/_index.scss */
+section.first_fold div.ff_content h1 {
+  margin: 20px 0;
 }
-/* line 45, ../sass/_index.scss */
+/* line 42, ../sass/_index.scss */
+section.first_fold div.ff_content .main_color {
+  color: #f8c235;
+}
+/* line 47, ../sass/_index.scss */
 section.first_fold video.bgvideo {
   width: 100%;
   height: 100%;
@@ -41,130 +104,234 @@ section.first_fold video.bgvideo {
 }
 
 /*-----------------------------------------------------------------------------------*/
-/* line 58, ../sass/_index.scss */
+/* line 60, ../sass/_index.scss */
 .mums_uzticas {
-  height: 160px;
+  height: auto;
   width: 100%;
   background: white;
   display: flex;
   justify-content: center;
 }
-/* line 65, ../sass/_index.scss */
+/* line 67, ../sass/_index.scss */
 .mums_uzticas div.mums_uzticas_wrapper {
   width: 80%;
   height: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  margin: 25px 0;
 }
-/* line 73, ../sass/_index.scss */
+/* line 77, ../sass/_index.scss */
 .mums_uzticas img {
-  height: 70%;
+  width: 100%;
   align-self: center;
 }
-/* line 78, ../sass/_index.scss */
+/* line 82, ../sass/_index.scss */
 .mums_uzticas span {
   margin: 0 50px;
 }
-/* line 82, ../sass/_index.scss */
-.mums_uzticas h1 {
+/* line 86, ../sass/_index.scss */
+.mums_uzticas h1 > span {
   margin: 0;
   align-self: center;
-  color: #404040;
+  color: #282a2b;
+  font-size: .8em;
+}
+/* line 92, ../sass/_index.scss */
+.mums_uzticas h1 {
+  margin: 0;
 }
 
 /*-----------------------------------------------------------------------------------*/
-/* line 96, ../sass/_index.scss */
+/* line 102, ../sass/_index.scss */
+section.review {
+  width: 100%;
+  height: 700px;
+  background: url("../img/pattern-dark.png");
+  display: flex;
+  justify-content: center;
+  color: #f4f4f4;
+}
+/* line 110, ../sass/_index.scss */
+section.review p {
+  color: #83898c;
+}
+/* line 114, ../sass/_index.scss */
+section.review div.review_wrapper {
+  width: 40%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-self: center;
+}
+/* line 123, ../sass/_index.scss */
+section.review div.review_wrapper > div {
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+/* line 128, ../sass/_index.scss */
+section.review div.review_wrapper > div h1 {
+  align-self: center;
+}
+/* line 133, ../sass/_index.scss */
+section.review div.review_wrapper div.review_data {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* line 138, ../sass/_index.scss */
+section.review div.review_wrapper div.review_data > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 150px;
+  align-self: center;
+}
+/* line 147, ../sass/_index.scss */
+section.review div.review_wrapper div.review_data div.review_name {
+  text-align: left;
+  margin-left: 50px;
+  align-self: center;
+}
+/* line 154, ../sass/_index.scss */
+section.review div.review_wrapper div.review_img {
+  height: 150px;
+  width: 150px;
+  align-self: center;
+}
+/* line 159, ../sass/_index.scss */
+section.review div.review_wrapper div.review_img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 100px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* line 174, ../sass/_index.scss */
 #google_map {
   width: 100%;
   height: 600px;
   margin: 0;
 }
 
-/* line 1, ../sass/_pakalpojumi.scss */
+/* line 5, ../sass/_pakalpojumi.scss */
 .testp {
   background: lightblue;
   height: 100vh;
   width: 100%;
 }
 
-/* line 1, ../sass/_cenas.scss */
+/* line 5, ../sass/_cenas.scss */
 .testc {
   background: lightcoral;
   width: 100%;
   height: 100vh;
 }
 
-/* line 12, ../sass/global.scss */
-body {
-  background: green;
-}
-
-/* line 16, ../sass/global.scss */
-* {
-  text-decoration: none;
-  font-size: 20px;
-}
-
 /*-----------------------------------------------------------------------------------*/
-/* line 25, ../sass/global.scss */
+/* line 10, ../sass/global.scss */
 header {
   background: black;
   width: 100vw;
-  height: 100px;
+  height: 80px;
   display: flex;
   position: fixed;
   justify-content: center;
   z-index: 10;
 }
-/* line 34, ../sass/global.scss */
+/* line 19, ../sass/global.scss */
 header div.content_wrapper {
   width: 80%;
   height: 100%;
   display: flex;
 }
-/* line 40, ../sass/global.scss */
+/* line 25, ../sass/global.scss */
 header div.content_wrapper div.logo {
   height: 100%;
   width: 300px;
   margin-right: auto;
 }
-/* line 46, ../sass/global.scss */
+/* line 31, ../sass/global.scss */
 header div.content_wrapper div.logo img {
-  width: 60%;
-  margin: 9px 0 0;
+  width: 40%;
+  margin: 12px 0 0;
 }
-/* line 52, ../sass/global.scss */
+/* line 37, ../sass/global.scss */
 header div.content_wrapper nav.main_nav {
   height: 100%;
   width: 60%;
   display: flex;
   justify-content: flex-end;
 }
-/* line 59, ../sass/global.scss */
+/* line 44, ../sass/global.scss */
 header div.content_wrapper nav.main_nav a {
   align-self: center;
   margin-left: 35px;
   font-size: .9em;
-  color: #ebebeb;
+  color: #83898c;
   transition: 0.15s;
 }
-/* line 66, ../sass/global.scss */
+/* line 51, ../sass/global.scss */
 header div.content_wrapper nav.main_nav a:hover {
-  color: #eea500;
+  color: #f8c235;
 }
 
 /*-----------------------------------------------------------------------------------*/
-/* line 79, ../sass/global.scss */
+/* line 64, ../sass/global.scss */
 footer {
   width: 100%;
   height: 200px;
-  background: black;
-  color: white;
+  background: url("../img/pattern-dark.png");
   margin: 0;
   text-align: center;
-  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-/* line 88, ../sass/global.scss */
+/* line 74, ../sass/global.scss */
+footer .social a {
+  display: block;
+  width: 64px;
+  height: 64px;
+  transition: .35s;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  border-radius: 50px;
+}
+/* line 83, ../sass/global.scss */
+footer ul {
+  margin: 45px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 89, ../sass/global.scss */
+footer ul li {
+  margin: 0 10px;
+}
+/* line 94, ../sass/global.scss */
 footer h1 {
   margin: 0;
+}
+/* line 98, ../sass/global.scss */
+footer div.copyrights {
+  background: rgba(0, 0, 0, 0.35);
+  border-top: 1px solid #2c2f29;
+  width: 100%;
+  height: 50px;
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+}
+/* line 107, ../sass/global.scss */
+footer div.copyrights p {
+  margin: 0;
+  font-size: .7em;
+  align-self: center;
+  color: #83898c;
 }

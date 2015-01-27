@@ -1,23 +1,8 @@
+@import "imports.scss";
+
 @import "index.scss";
 @import "pakalpojumi.scss";
 @import "cenas.scss";
-
-
-$main_color: #eea500;
-$main_color-mono-light: #ebebeb;
-
-
-
-
-body {
-  background: green;
-}
-
-* {
-  text-decoration: none;
-  font-size: 20px;
-}
-
 
 //NAVIGATION
 /*-----------------------------------------------------------------------------------*/
@@ -25,7 +10,7 @@ body {
 header {
   background: black;
   width: 100vw;
-  height: 100px;
+  height: 80px;
   display: flex;
   position: fixed;
   justify-content: center;
@@ -44,8 +29,8 @@ header {
       margin-right: auto;
 
       img {
-        width: 60%;
-        margin: 9px 0 0;
+        width: 40%;
+        margin: 12px 0 0;
       }
     }
 
@@ -60,7 +45,7 @@ header {
         align-self: center;
         margin-left: 35px;
         font-size: .9em;
-        color: $main_color-mono-light;
+        color: $main_color-medium-grey;
         transition: 0.15s;
 
         &:hover {
@@ -79,13 +64,51 @@ header {
 footer {
   width: 100%;
   height: 200px;
-  background: black;
-  color: white;
+  background: url("../img/pattern-dark.png");
   margin: 0;
   text-align: center;
-  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .social a {
+    display: block;
+    width: 64px;
+    height: 64px;
+    transition: .35s;
+    @include hide-text;
+    border-radius: 50px;
+  }
+
+  ul {
+    margin: 45px 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      margin: 0 10px;
+    }
+  }
 
   h1 {
     margin: 0;
+  }
+
+  div.copyrights {
+    background: rgba(0, 0, 0, .35);
+    border-top: 1px solid #2c2f29;
+    width: 100%;
+    height: 50px;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+
+    p {
+      margin: 0;
+      font-size: .7em;
+      align-self: center;
+      color: $main_color-medium-grey;
+    }
   }
 }
