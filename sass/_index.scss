@@ -52,8 +52,77 @@ section.first_fold {
 }
 
 
+//KAS KO KAPEC
+/*-----------------------------------------------------------------------------------*/
 
-//FIRST SECTION
+section.kaskokapec {
+  background: url("../img/pattern-light.png");
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  div.kaskokapec_h1 {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    height: 100px;
+  }
+
+  div.kaskokapec_wrapper {
+    width: 80%;
+    align-self: center;
+    //background: blue;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    div.kaskokapec_section {
+      width: 360px;
+      height: 360px;
+      background: $main_color;
+      margin: 4%;
+      border-radius: 100%;
+      align-self: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+     div.kaskokapec_text {
+       align-self: center;
+       width: 70%;
+
+       h1 {
+         color: white;
+         text-align: center;
+         font-size: 1.6em;
+         margin-bottom: 40px;
+       }
+
+       p {
+         text-align: center;
+         color: $main_color-dark-grey;
+       }
+     }
+    }
+  }
+}
+
+
+//PROCESS
+/*-----------------------------------------------------------------------------------*/
+
+section.process {
+  background: url("../img/pattern-dark.png");
+  height: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+//MUMS UZTICAS
 /*-----------------------------------------------------------------------------------*/
 
 
@@ -67,30 +136,16 @@ section.first_fold {
   div.mums_uzticas_wrapper {
     width: 80%;
     height: 100%;
-    //background: green;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 25px 0;
+    margin: 0 0 35px;
   }
 
   img {
     width: 100%;
     align-self: center;
-  }
-
-  span {
-    margin: 0 50px;
-  }
-
-  h1 > span {
-    margin: 0;
-    align-self: center;
-    color: $main_color-dark-grey;
-    font-size: .8em;
-  }
-  h1 {
-    margin: 0;
+    margin: 40px 0 50px;
   }
 }
 
@@ -101,32 +156,40 @@ section.first_fold {
 
 section.review {
   width: 100%;
-  height: 700px;
+  height: 800px;
   background: url("../img/pattern-dark.png");
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   color: $main_color-mono-light;
 
   p {
     color: $main_color-medium-grey;
+    font-size: .8em;
+    margin-top: 5px;
   }
 
   div.review_wrapper {
-    width: 40%;
-    height: 500px;
-    //background: green;
+    width: 20%;
+    height: auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    align-self: center;
+    align-self: flex-start;
+    margin: 3% 3% 0;
 
-    &>div {
+    div.review_headline {
+      height: 150px;
+      border-top: 1px solid #252525;
       width: 100%;
-      text-align: center;
+      text-align: justify;
       display: flex;
+      padding-top: 30px;
 
       h1 {
-        align-self: center;
+        align-self: flex-start;
+        font-size: .9em;
+        font-weight: 100;
       }
     }
 
@@ -134,27 +197,20 @@ section.review {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-
-      &>div {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 150px;
-        align-self: center;
-      }
+      width: 90%;
 
       div.review_name {
-        text-align: left;
-        margin-left: 50px;
-        align-self: center;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 60px;
       }
     }
 
     div.review_img {
-      height: 150px;
-      width: 150px;
+      height: 200px;
+      width: 200px;
       align-self: center;
+      margin: 0 0 30px;
 
       img {
         max-width: 100%;

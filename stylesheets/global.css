@@ -31,19 +31,39 @@
   background-position: 0 -256px;
 }
 
-/* line 15, ../sass/_imports.scss */
+/* line 13, ../sass/_imports.scss */
+.light_h1 {
+  color: #f0f0f0;
+}
+
+/* line 16, ../sass/_imports.scss */
+.dark_h1 {
+  color: #282a2b;
+}
+
+/* line 20, ../sass/_imports.scss */
+.vertical_center {
+  align-self: center;
+}
+
+/* line 24, ../sass/_imports.scss */
+.vertical_bottom {
+  align-self: flex-end;
+}
+
+/* line 29, ../sass/_imports.scss */
 body {
   background: green;
 }
 
-/* line 19, ../sass/_imports.scss */
+/* line 33, ../sass/_imports.scss */
 * {
   text-decoration: none;
   font-size: 20px;
   list-style: none;
 }
 
-/* line 25, ../sass/_imports.scss */
+/* line 39, ../sass/_imports.scss */
 h1,
 h2,
 p {
@@ -51,10 +71,22 @@ p {
   padding: 0;
 }
 
-/* line 32, ../sass/_imports.scss */
+/* line 46, ../sass/_imports.scss */
 span.standout {
   color: #f8c235;
   font-size: 1em;
+}
+
+/* line 51, ../sass/_imports.scss */
+div.generic_h1 {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  height: 100px;
+}
+/* line 57, ../sass/_imports.scss */
+div.generic_h1 h1 {
+  font-size: 30px;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -104,7 +136,73 @@ section.first_fold video.bgvideo {
 }
 
 /*-----------------------------------------------------------------------------------*/
-/* line 60, ../sass/_index.scss */
+/* line 58, ../sass/_index.scss */
+section.kaskokapec {
+  background: url("../img/pattern-light.png");
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* line 66, ../sass/_index.scss */
+section.kaskokapec div.kaskokapec_h1 {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  height: 100px;
+}
+/* line 73, ../sass/_index.scss */
+section.kaskokapec div.kaskokapec_wrapper {
+  width: 80%;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* line 81, ../sass/_index.scss */
+section.kaskokapec div.kaskokapec_wrapper div.kaskokapec_section {
+  width: 360px;
+  height: 360px;
+  background: #f8c235;
+  margin: 4%;
+  border-radius: 100%;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* line 92, ../sass/_index.scss */
+section.kaskokapec div.kaskokapec_wrapper div.kaskokapec_section div.kaskokapec_text {
+  align-self: center;
+  width: 70%;
+}
+/* line 96, ../sass/_index.scss */
+section.kaskokapec div.kaskokapec_wrapper div.kaskokapec_section div.kaskokapec_text h1 {
+  color: white;
+  text-align: center;
+  font-size: 1.6em;
+  margin-bottom: 40px;
+}
+/* line 103, ../sass/_index.scss */
+section.kaskokapec div.kaskokapec_wrapper div.kaskokapec_section div.kaskokapec_text p {
+  text-align: center;
+  color: #282a2b;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* line 116, ../sass/_index.scss */
+section.process {
+  background: url("../img/pattern-dark.png");
+  height: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* line 129, ../sass/_index.scss */
 .mums_uzticas {
   height: auto;
   width: 100%;
@@ -112,97 +210,85 @@ section.first_fold video.bgvideo {
   display: flex;
   justify-content: center;
 }
-/* line 67, ../sass/_index.scss */
+/* line 136, ../sass/_index.scss */
 .mums_uzticas div.mums_uzticas_wrapper {
   width: 80%;
   height: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 25px 0;
+  margin: 0 0 35px;
 }
-/* line 77, ../sass/_index.scss */
+/* line 145, ../sass/_index.scss */
 .mums_uzticas img {
   width: 100%;
   align-self: center;
-}
-/* line 82, ../sass/_index.scss */
-.mums_uzticas span {
-  margin: 0 50px;
-}
-/* line 86, ../sass/_index.scss */
-.mums_uzticas h1 > span {
-  margin: 0;
-  align-self: center;
-  color: #282a2b;
-  font-size: .8em;
-}
-/* line 92, ../sass/_index.scss */
-.mums_uzticas h1 {
-  margin: 0;
+  margin: 40px 0 50px;
 }
 
 /*-----------------------------------------------------------------------------------*/
-/* line 102, ../sass/_index.scss */
+/* line 157, ../sass/_index.scss */
 section.review {
   width: 100%;
-  height: 700px;
+  height: 800px;
   background: url("../img/pattern-dark.png");
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  color: #f4f4f4;
+  color: #f0f0f0;
 }
-/* line 110, ../sass/_index.scss */
+/* line 166, ../sass/_index.scss */
 section.review p {
-  color: #83898c;
+  color: #7a7873;
+  font-size: .8em;
+  margin-top: 5px;
 }
-/* line 114, ../sass/_index.scss */
+/* line 172, ../sass/_index.scss */
 section.review div.review_wrapper {
-  width: 40%;
-  height: 500px;
+  width: 20%;
+  height: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  align-self: center;
+  align-self: flex-start;
+  margin: 3% 3% 0;
 }
-/* line 123, ../sass/_index.scss */
-section.review div.review_wrapper > div {
+/* line 181, ../sass/_index.scss */
+section.review div.review_wrapper div.review_headline {
+  height: 150px;
+  border-top: 1px solid #252525;
   width: 100%;
-  text-align: center;
+  text-align: justify;
   display: flex;
+  padding-top: 30px;
 }
-/* line 128, ../sass/_index.scss */
-section.review div.review_wrapper > div h1 {
-  align-self: center;
+/* line 189, ../sass/_index.scss */
+section.review div.review_wrapper div.review_headline h1 {
+  align-self: flex-start;
+  font-size: .9em;
+  font-weight: 100;
 }
-/* line 133, ../sass/_index.scss */
+/* line 196, ../sass/_index.scss */
 section.review div.review_wrapper div.review_data {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  width: 90%;
 }
-/* line 138, ../sass/_index.scss */
-section.review div.review_wrapper div.review_data > div {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 150px;
-  align-self: center;
-}
-/* line 147, ../sass/_index.scss */
+/* line 202, ../sass/_index.scss */
 section.review div.review_wrapper div.review_data div.review_name {
-  text-align: left;
-  margin-left: 50px;
-  align-self: center;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 60px;
 }
-/* line 154, ../sass/_index.scss */
+/* line 209, ../sass/_index.scss */
 section.review div.review_wrapper div.review_img {
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
   align-self: center;
+  margin: 0 0 30px;
 }
-/* line 159, ../sass/_index.scss */
+/* line 215, ../sass/_index.scss */
 section.review div.review_wrapper div.review_img img {
   max-width: 100%;
   height: auto;
@@ -210,7 +296,7 @@ section.review div.review_wrapper div.review_img img {
 }
 
 /*-----------------------------------------------------------------------------------*/
-/* line 174, ../sass/_index.scss */
+/* line 230, ../sass/_index.scss */
 #google_map {
   width: 100%;
   height: 600px;
@@ -271,7 +357,7 @@ header div.content_wrapper nav.main_nav a {
   align-self: center;
   margin-left: 35px;
   font-size: .9em;
-  color: #83898c;
+  color: #f0f0f0;
   transition: 0.15s;
 }
 /* line 51, ../sass/global.scss */
@@ -333,5 +419,5 @@ footer div.copyrights p {
   margin: 0;
   font-size: .7em;
   align-self: center;
-  color: #83898c;
+  color: #7a7873;
 }

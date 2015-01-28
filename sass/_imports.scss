@@ -5,11 +5,25 @@
 
 
 $main_color: #f8c235;
-$main_color-mono-light: #f4f4f4;
+$main_color-mono-light: #f0f0f0;
 $main_color-dark-grey: #282a2b;
-$main_color-medium-grey: #83898c;
+$main_color-medium-grey: #7a7873;
 
+$main-h1-size: 30px;
+.light_h1 {
+  color: $main_color-mono-light;
+}
+.dark_h1 {
+  color: $main_color-dark-grey;
+}
 
+.vertical_center {
+  align-self: center;
+}
+
+.vertical_bottom {
+  align-self: flex-end;
+}
 
 
 body {
@@ -32,4 +46,15 @@ p {
 span.standout {
   color: $main_color;
   font-size: 1em;
+}
+
+div.generic_h1 {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  height: 100px;
+
+  h1 {
+    font-size: $main-h1-size;
+  }
 }
