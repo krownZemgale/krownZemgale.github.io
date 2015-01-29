@@ -47,7 +47,7 @@ section.first_fold {
   video.bgvideo {
     width: 100%;
     height: 100%;
-    margin: 0 auto -5px;
+    margin: 0 auto -7px;
   }
 }
 
@@ -114,7 +114,7 @@ section.kaskokapec {
 /*-----------------------------------------------------------------------------------*/
 
 div#carousel-example-generic {
-  height: 800px;
+  height: 900px;
   background: url("../img/pattern-dark.png");
 
   li {
@@ -128,7 +128,7 @@ div#carousel-example-generic {
   }
 
   .item {
-    margin: 50px auto 0;
+    margin: 70px auto 0;
 
     img {
       margin: auto;
@@ -138,9 +138,9 @@ div#carousel-example-generic {
 
   div.carousel-caption {
     position: static;
-    width: 70%;
+    width: 50%;
     margin: auto;
-    padding-top: 10px;
+    padding-top: 40px;
 
     h3 {
       color: $main_color;

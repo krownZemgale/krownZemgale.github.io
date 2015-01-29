@@ -132,7 +132,7 @@ section.first_fold div.ff_content .main_color {
 section.first_fold video.bgvideo {
   width: 100%;
   height: 100%;
-  margin: 0 auto -5px;
+  margin: 0 auto -7px;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -193,7 +193,7 @@ section.kaskokapec div.kaskokapec_wrapper div.kaskokapec_section div.kaskokapec_
 /*-----------------------------------------------------------------------------------*/
 /* line 116, ../sass/_index.scss */
 div#carousel-example-generic {
-  height: 800px;
+  height: 900px;
   background: url("../img/pattern-dark.png");
 }
 /* line 120, ../sass/_index.scss */
@@ -208,7 +208,7 @@ div#carousel-example-generic li.active {
 }
 /* line 130, ../sass/_index.scss */
 div#carousel-example-generic .item {
-  margin: 50px auto 0;
+  margin: 70px auto 0;
 }
 /* line 133, ../sass/_index.scss */
 div#carousel-example-generic .item img {
@@ -218,9 +218,9 @@ div#carousel-example-generic .item img {
 /* line 139, ../sass/_index.scss */
 div#carousel-example-generic div.carousel-caption {
   position: static;
-  width: 70%;
+  width: 50%;
   margin: auto;
-  padding-top: 10px;
+  padding-top: 40px;
 }
 /* line 145, ../sass/_index.scss */
 div#carousel-example-generic div.carousel-caption h3 {
