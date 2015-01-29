@@ -192,17 +192,47 @@ section.kaskokapec div.kaskokapec_wrapper div.kaskokapec_section div.kaskokapec_
 
 /*-----------------------------------------------------------------------------------*/
 /* line 116, ../sass/_index.scss */
-section.process {
-  background: url("../img/pattern-dark.png");
+div#carousel-example-generic {
   height: 800px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  background: url("../img/pattern-dark.png");
+}
+/* line 120, ../sass/_index.scss */
+div#carousel-example-generic li {
+  width: 20px;
+  height: 20px;
+}
+/* line 125, ../sass/_index.scss */
+div#carousel-example-generic li.active {
+  background: #f8c235;
+  border: 1px solid #f8c235;
+}
+/* line 130, ../sass/_index.scss */
+div#carousel-example-generic .item {
+  margin: 50px auto 0;
+}
+/* line 133, ../sass/_index.scss */
+div#carousel-example-generic .item img {
+  margin: auto;
+  border-radius: 10px;
+}
+/* line 139, ../sass/_index.scss */
+div#carousel-example-generic div.carousel-caption {
+  position: static;
+  width: 70%;
+  margin: auto;
+  padding-top: 10px;
+}
+/* line 145, ../sass/_index.scss */
+div#carousel-example-generic div.carousel-caption h3 {
+  color: #f8c235;
+}
+/* line 149, ../sass/_index.scss */
+div#carousel-example-generic div.carousel-caption p {
+  font-size: .8em;
 }
 
 /*-----------------------------------------------------------------------------------*/
-/* line 129, ../sass/_index.scss */
+/* line 159, ../sass/_index.scss */
 .mums_uzticas {
   height: auto;
   width: 100%;
@@ -210,7 +240,7 @@ section.process {
   display: flex;
   justify-content: center;
 }
-/* line 136, ../sass/_index.scss */
+/* line 166, ../sass/_index.scss */
 .mums_uzticas div.mums_uzticas_wrapper {
   width: 80%;
   height: 100%;
@@ -219,7 +249,7 @@ section.process {
   flex-wrap: wrap;
   margin: 0 0 35px;
 }
-/* line 145, ../sass/_index.scss */
+/* line 175, ../sass/_index.scss */
 .mums_uzticas img {
   width: 100%;
   align-self: center;
@@ -227,7 +257,7 @@ section.process {
 }
 
 /*-----------------------------------------------------------------------------------*/
-/* line 157, ../sass/_index.scss */
+/* line 187, ../sass/_index.scss */
 section.review {
   width: 100%;
   height: 800px;
@@ -237,13 +267,13 @@ section.review {
   justify-content: center;
   color: #f0f0f0;
 }
-/* line 166, ../sass/_index.scss */
+/* line 196, ../sass/_index.scss */
 section.review p {
   color: #7a7873;
   font-size: .8em;
   margin-top: 5px;
 }
-/* line 172, ../sass/_index.scss */
+/* line 202, ../sass/_index.scss */
 section.review div.review_wrapper {
   width: 20%;
   height: auto;
@@ -253,7 +283,7 @@ section.review div.review_wrapper {
   align-self: flex-start;
   margin: 3% 3% 0;
 }
-/* line 181, ../sass/_index.scss */
+/* line 211, ../sass/_index.scss */
 section.review div.review_wrapper div.review_headline {
   height: 150px;
   border-top: 1px solid #252525;
@@ -262,33 +292,33 @@ section.review div.review_wrapper div.review_headline {
   display: flex;
   padding-top: 30px;
 }
-/* line 189, ../sass/_index.scss */
+/* line 219, ../sass/_index.scss */
 section.review div.review_wrapper div.review_headline h1 {
   align-self: flex-start;
   font-size: .9em;
   font-weight: 100;
 }
-/* line 196, ../sass/_index.scss */
+/* line 226, ../sass/_index.scss */
 section.review div.review_wrapper div.review_data {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width: 90%;
 }
-/* line 202, ../sass/_index.scss */
+/* line 232, ../sass/_index.scss */
 section.review div.review_wrapper div.review_data div.review_name {
   text-align: center;
   width: 100%;
   margin-bottom: 60px;
 }
-/* line 209, ../sass/_index.scss */
+/* line 239, ../sass/_index.scss */
 section.review div.review_wrapper div.review_img {
   height: 200px;
   width: 200px;
   align-self: center;
   margin: 0 0 30px;
 }
-/* line 215, ../sass/_index.scss */
+/* line 245, ../sass/_index.scss */
 section.review div.review_wrapper div.review_img img {
   max-width: 100%;
   height: auto;
@@ -296,7 +326,7 @@ section.review div.review_wrapper div.review_img img {
 }
 
 /*-----------------------------------------------------------------------------------*/
-/* line 230, ../sass/_index.scss */
+/* line 260, ../sass/_index.scss */
 #google_map {
   width: 100%;
   height: 600px;

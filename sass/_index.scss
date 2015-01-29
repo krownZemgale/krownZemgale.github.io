@@ -113,13 +113,43 @@ section.kaskokapec {
 //PROCESS
 /*-----------------------------------------------------------------------------------*/
 
-section.process {
-  background: url("../img/pattern-dark.png");
+div#carousel-example-generic {
   height: 800px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  background: url("../img/pattern-dark.png");
+
+  li {
+    width: 20px;
+    height: 20px;
+  }
+
+  li.active {
+    background: $main_color;
+    border: 1px solid $main_color;
+  }
+
+  .item {
+    margin: 50px auto 0;
+
+    img {
+      margin: auto;
+      border-radius: 10px;
+    }
+  }
+
+  div.carousel-caption {
+    position: static;
+    width: 70%;
+    margin: auto;
+    padding-top: 10px;
+
+    h3 {
+      color: $main_color;
+    }
+
+    p {
+      font-size: .8em;
+    }
+  }
 }
 
 //MUMS UZTICAS
