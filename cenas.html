@@ -4,31 +4,217 @@
     <meta charset="UTF-8">
     <title>Krown Zemgale</title>
     <link href="stylesheets/normalize.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link href="stylesheets/global.css" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
 <body>
+
+    <!--Google Analytics-->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-60966224-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <!--Facebook SDK-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
     <header>
         <div class="content_wrapper">
             <div class="logo"><a href="#"><img src="img/krown-zemgale-logo.png"></a></div>
             <nav class="main_nav">
                 <a href="index.html">Par mums</a>
-                <a href="pakalpojumi.html">Pakalpojumi</a>
-                <a href="cenas.html">Cenas</a>
+                <a href="cenas.html" class="active_link">Cenas</a>
             </nav>
         </div>
     </header>
 
-    <section class="testc"></section>
+    <section class="cenas flex horizontal_center">
+        <div class="cenas_wrapper flex">
 
-    <footer>
-        <ul class="social">
-            <li><a href="https://www.facebook.com/KrownZemgale" class="icons-fb">Facebook</a></li>
-            <li><a href="#" class="icons-g">Google+</a></li>
-            <li><a href="#" class="icons-tw">Twitter</a></li>
-        </ul>
-        <div class="copyrights">
-            <p>2015 Krown Zemgale | visas tiesības aizsargātas</p>
+            <h1>Vieglie auto:</h1>
+
+            <div class="cenu_bloks">
+                <div class="cenas_icon"><img src="img/icons/car.svg" alt="1"/></div>
+                <div class="cenas_txt">
+                    <h2>Small cars</h2>
+                </div>
+                <div class="cenas_cena">
+                    <p>from<br/> <span>€ 149.-</span></p>
+                </div>
+            </div>
+            <div class="cenu_bloks">
+                <div class="cenas_icon"><img src="img/icons/car.svg" alt="1"/></div>
+                <div class="cenas_txt">
+                    <h2>Small-middle and middle class cars</h2>
+                </div>
+                <div class="cenas_cena">
+                    <p>from<br/> <span>€ 169.-</span></p>
+                </div>
+            </div>
+            <div class="cenu_bloks">
+                <div class="cenas_icon"><img src="img/icons/car.svg" alt="1"/></div>
+                <div class="cenas_txt">
+                    <h2>SUVs, station wagons, minivans</h2>
+                </div>
+                <div class="cenas_cena">
+                    <p>from<br/> <span>€ 189.-</span></p>
+                </div>
+            </div>
+            <div class="cenu_bloks">
+                <div class="cenas_icon"><img src="img/icons/car.svg" alt="1"/></div>
+                <div class="cenas_txt">
+                    <h2>Only car or van põhjatöötlus</h2>
+                </div>
+                <div class="cenas_cena">
+                    <p>from<br/> <span>€ 99.-</span></p>
+                </div>
+            </div>
+
+            <h1>Smagie auto:</h1>
+
+            <div class="cenu_bloks">
+                <div class="cenas_icon"><img src="img/icons/truck.svg" alt="1"/></div>
+                <div class="cenas_txt">
+                    <h2>Tracker 2-axis, with an unladen weight of 5-8 t</h2>
+                </div>
+                <div class="cenas_cena">
+                    <p>from<br/> <span>€ 259.-</span></p>
+                </div>
+            </div>
+            <div class="cenu_bloks">
+                <div class="cenas_icon"><img src="img/icons/truck.svg" alt="1"/></div>
+                <div class="cenas_txt">
+                    <h2>Tracker 3-axis, the empty weight of 7-10 t</h2>
+                </div>
+                <div class="cenas_cena">
+                    <p>from<br/> <span>€ 349.-</span></p>
+                </div>
+            </div>
+            <div class="cenu_bloks">
+                <div class="cenas_icon"><img src="img/icons/truck.svg" alt="1"/></div>
+                <div class="cenas_txt">
+                    <h2>2 axes, with an unladen weight 3.5-5 t</h2>
+                </div>
+                <div class="cenas_cena">
+                    <p>from<br/> <span>€ 279.-</span></p>
+                </div>
+            </div>
+            <div class="cenu_bloks">
+                <div class="cenas_icon"><img src="img/icons/truck.svg" alt="1"/></div>
+                <div class="cenas_txt">
+                    <h2>Truck trailers 12-14 m</h2>
+                </div>
+                <div class="cenas_cena">
+                    <p>from<br/> <span>€ 259.-</span></p>
+                </div>
+            </div>
+
+            <h1>Lauksaimniecības tehnika:</h1>
+
+            <div class="cenu_bloks">
+                <div class="cenas_icon"><img src="img/icons/tractor.svg" alt="1"/></div>
+                <div class="cenas_txt">
+                    <h2>Combine harvester</h2>
+                </div>
+                <div class="cenas_cena">
+                    <p>from<br/> <span>€ 375.-</span></p>
+                </div>
+            </div>
+            <div class="cenu_bloks">
+                <div class="cenas_icon"><img src="img/icons/tractor.svg" alt="1"/></div>
+                <div class="cenas_txt">
+                    <h2>Tractor</h2>
+                </div>
+                <div class="cenas_cena">
+                    <p>from<br/> <span>€ 159.-</span></p>
+                </div>
+            </div>
+            <div class="cenu_bloks">
+                <div class="cenas_icon"><img src="img/icons/tractor.svg" alt="1"/></div>
+                <div class="cenas_txt">
+                    <h2>Plow, cultivator and other implements</h2>
+                </div>
+                <div class="cenas_cena">
+                    <p>from<br/> <span>€ 159.-</span></p>
+                </div>
+            </div>
+
+            <h1>Autobusi:</h1>
+
+            <div class="cenu_bloks">
+                <div class="cenas_icon"><img src="img/icons/bus.svg" alt="1"/></div>
+                <div class="cenas_txt">
+                    <h2>Bus travel over 12m:<br/> Complete Treatment</h2>
+                </div>
+                <div class="cenas_cena">
+                    <p>from<br/> <span>€ 359.-</span></p>
+                </div>
+            </div>
+            <div class="cenu_bloks">
+                <div class="cenas_icon"><img src="img/icons/bus.svg" alt="1"/></div>
+                <div class="cenas_txt">
+                    <h2>Bus travel over 12m:<br/> Wheel arches and at the bottom of processing</h2>
+                </div>
+                <div class="cenas_cena">
+                    <p>from<br/> <span>€ 249.-</span></p>
+                </div>
+            </div>
+            <div class="cenu_bloks">
+                <div class="cenas_icon"><img src="img/icons/bus.svg" alt="1"/></div>
+                <div class="cenas_txt">
+                    <h2>Tour Bus 12m below:<br/> Complete Treatment</h2>
+                </div>
+                <div class="cenas_cena">
+                    <p>from<br/> <span>€ 295.-</span></p>
+                </div>
+            </div>
+            <div class="cenu_bloks">
+                <div class="cenas_icon"><img src="img/icons/bus.svg" alt="1"/></div>
+                <div class="cenas_txt">
+                    <h2>Tour Bus 12m below:<br/> Wheel arches and at the bottom of processing</h2>
+                </div>
+                <div class="cenas_cena">
+                    <p>from<br/> <span>€ 195.-</span></p>
+                </div>
+            </div>
+
         </div>
+    </section>
+
+    <footer class="flex">
+        <div class="width_1280 flex wrapper horizontal_center">
+
+            <div class="fb-like-box" data-href="https://www.facebook.com/KrownZemgale" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+
+
+            <div class="rekviziti flex vertical_center">
+                <h4>SIA "Krown-zemgale"</h4>
+                <h4><span>Reg.Nr.:</span> LV 40003987004</h4>
+                <h4><span>Adrese:</span> Kopiela 1, Ozolnieki, Ozolnieku novads, LV-3018</h4>
+                <h4><span>E-pasts:</span> info@autoelegance.lv</h4>
+                <h4><span>Banka:</span> Swedbank AS</h4>
+                <h4><span>Konts:</span> LV62HABA0551036299017</h4>
+            </div>
+
+        </div>
+
+        <div class="copyrights flex horizontal_center vertical_center">
+            <p>© 2015 Krown-zemgale.</p>
+        </div>
+
     </footer>
 
 </body>

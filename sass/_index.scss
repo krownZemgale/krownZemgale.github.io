@@ -15,8 +15,7 @@ section.first_fold {
   div.ff_bg {
     width: 100%;
     height: 100%;
-    background: black;
-    opacity: .5;
+    background: url("../img/pattern-dark-60.png");
     position: absolute;
   }
 
@@ -62,6 +61,7 @@ section.kaskokapec {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding-bottom: 50px;
 
   div.kaskokapec_h1 {
     width: 100%;
@@ -82,7 +82,7 @@ section.kaskokapec {
       width: 360px;
       height: 360px;
       background: $main_color;
-      margin: 4%;
+      margin: 50px 50px 0;
       border-radius: 100%;
       align-self: center;
       display: flex;
@@ -110,48 +110,6 @@ section.kaskokapec {
 }
 
 
-//PROCESS
-/*-----------------------------------------------------------------------------------*/
-
-div#carousel-example-generic {
-  height: 900px;
-  background: url("../img/pattern-dark.png");
-
-  li {
-    width: 20px;
-    height: 20px;
-  }
-
-  li.active {
-    background: $main_color;
-    border: 1px solid $main_color;
-  }
-
-  .item {
-    margin: 70px auto 0;
-
-    img {
-      margin: auto;
-      border-radius: 10px;
-    }
-  }
-
-  div.carousel-caption {
-    position: static;
-    width: 50%;
-    margin: auto;
-    padding-top: 40px;
-
-    h3 {
-      color: $main_color;
-    }
-
-    p {
-      font-size: .8em;
-    }
-  }
-}
-
 //MUMS UZTICAS
 /*-----------------------------------------------------------------------------------*/
 
@@ -178,79 +136,6 @@ div#carousel-example-generic {
     margin: 40px 0 50px;
   }
 }
-
-
-
-//REVIEWS
-/*-----------------------------------------------------------------------------------*/
-
-section.review {
-  width: 100%;
-  height: 800px;
-  background: url("../img/pattern-dark.png");
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  color: $main_color-mono-light;
-
-  p {
-    color: $main_color-medium-grey;
-    font-size: .8em;
-    margin-top: 5px;
-  }
-
-  div.review_wrapper {
-    width: 20%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-self: flex-start;
-    margin: 3% 3% 0;
-
-    div.review_headline {
-      height: 150px;
-      border-top: 1px solid #252525;
-      width: 100%;
-      text-align: justify;
-      display: flex;
-      padding-top: 30px;
-
-      h1 {
-        align-self: flex-start;
-        font-size: .9em;
-        font-weight: 100;
-      }
-    }
-
-    div.review_data {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      width: 90%;
-
-      div.review_name {
-        text-align: center;
-        width: 100%;
-        margin-bottom: 60px;
-      }
-    }
-
-    div.review_img {
-      height: 200px;
-      width: 200px;
-      align-self: center;
-      margin: 0 0 30px;
-
-      img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 100px;
-      }
-    }
-  }
-}
-
 
 
 //GOOGLE MAPS

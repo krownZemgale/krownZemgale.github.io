@@ -1,8 +1,6 @@
 @import "compass";
 
-@import "../img/icons/*.png";
-@include all-icons-sprites;
-
+@import "flexbox";
 
 $main_color: #f8c235;
 $main_color-mono-light: #f0f0f0;
@@ -10,6 +8,7 @@ $main_color-dark-grey: #282a2b;
 $main_color-medium-grey: #7a7873;
 
 $main-h1-size: 30px;
+
 .light_h1 {
   color: $main_color-mono-light;
 }
@@ -26,11 +25,7 @@ $main-h1-size: 30px;
 }
 
 
-body {
-  background: green;
-}
-
-* {
+*, a, a:hover, a:focus {
   text-decoration: none;
   font-size: 20px;
   list-style: none;
@@ -58,3 +53,61 @@ div.generic_h1 {
     font-size: $main-h1-size;
   }
 }
+
+
+.flex {
+  @extend %flexbox;
+  @include flex-wrap(wrap);
+}
+
+.horizontal_center {
+  @include justify-content(center);
+}
+
+.space_between {
+  @include justify-content(space-between);
+}
+
+.vertical_center {
+  @include align-self(center);
+}
+
+
+
+//order
+
+.first_element {
+  order: 1;
+}
+
+.second_element {
+  order: 2;
+}
+
+//GLOBAS MEDIA
+
+@media screen and (max-width: 1281px){
+  .width_1280 {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  h1 {
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+
+  .padding {
+    padding: 60px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
