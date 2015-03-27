@@ -3,6 +3,7 @@
 @import "flexbox";
 
 $main_color: #f8c235;
+$warning_color: #d83f23;
 $main_color-mono-light: #f0f0f0;
 $main_color-dark-grey: #282a2b;
 $main_color-medium-grey: #7a7873;
@@ -85,12 +86,6 @@ div.generic_h1 {
 }
 
 //GLOBAS MEDIA
-
-@media screen and (max-width: 1281px){
-  .width_1280 {
-    width: 90%;
-  }
-}
 
 @media screen and (max-width: 600px){
   h1 {

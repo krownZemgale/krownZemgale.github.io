@@ -6,34 +6,34 @@
   display: flex;
 }
 
-/* line 12, ../sass/_imports.scss */
+/* line 13, ../sass/_imports.scss */
 .light_h1 {
   color: #f0f0f0;
 }
 
-/* line 15, ../sass/_imports.scss */
+/* line 16, ../sass/_imports.scss */
 .dark_h1 {
   color: #282a2b;
 }
 
-/* line 19, ../sass/_imports.scss */
+/* line 20, ../sass/_imports.scss */
 .vertical_center {
   align-self: center;
 }
 
-/* line 23, ../sass/_imports.scss */
+/* line 24, ../sass/_imports.scss */
 .vertical_bottom {
   align-self: flex-end;
 }
 
-/* line 28, ../sass/_imports.scss */
+/* line 29, ../sass/_imports.scss */
 *, a, a:hover, a:focus {
   text-decoration: none;
   font-size: 20px;
   list-style: none;
 }
 
-/* line 34, ../sass/_imports.scss */
+/* line 35, ../sass/_imports.scss */
 h1,
 h2,
 p {
@@ -41,25 +41,25 @@ p {
   padding: 0;
 }
 
-/* line 41, ../sass/_imports.scss */
+/* line 42, ../sass/_imports.scss */
 span.standout {
   color: #f8c235;
   font-size: 1em;
 }
 
-/* line 46, ../sass/_imports.scss */
+/* line 47, ../sass/_imports.scss */
 div.generic_h1 {
   width: 100%;
   justify-content: center;
   display: flex;
   height: 100px;
 }
-/* line 52, ../sass/_imports.scss */
+/* line 53, ../sass/_imports.scss */
 div.generic_h1 h1 {
   font-size: 30px;
 }
 
-/* line 58, ../sass/_imports.scss */
+/* line 59, ../sass/_imports.scss */
 .flex {
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
@@ -67,7 +67,7 @@ div.generic_h1 h1 {
   flex-wrap: wrap;
 }
 
-/* line 63, ../sass/_imports.scss */
+/* line 64, ../sass/_imports.scss */
 .horizontal_center {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -76,7 +76,7 @@ div.generic_h1 h1 {
   justify-content: center;
 }
 
-/* line 67, ../sass/_imports.scss */
+/* line 68, ../sass/_imports.scss */
 .space_between {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -85,7 +85,7 @@ div.generic_h1 h1 {
   justify-content: space-between;
 }
 
-/* line 71, ../sass/_imports.scss */
+/* line 72, ../sass/_imports.scss */
 .vertical_center {
   -webkit-align-self: center;
   -moz-align-self: center;
@@ -93,30 +93,24 @@ div.generic_h1 h1 {
   align-self: center;
 }
 
-/* line 79, ../sass/_imports.scss */
+/* line 80, ../sass/_imports.scss */
 .first_element {
   order: 1;
 }
 
-/* line 83, ../sass/_imports.scss */
+/* line 84, ../sass/_imports.scss */
 .second_element {
   order: 2;
 }
 
-@media screen and (max-width: 1281px) {
-  /* line 90, ../sass/_imports.scss */
-  .width_1280 {
-    width: 90%;
-  }
-}
 @media screen and (max-width: 600px) {
-  /* line 96, ../sass/_imports.scss */
+  /* line 91, ../sass/_imports.scss */
   h1 {
     margin-bottom: 40px;
     font-size: 30px;
   }
 
-  /* line 101, ../sass/_imports.scss */
+  /* line 96, ../sass/_imports.scss */
   .padding {
     padding: 60px 0;
   }
@@ -257,7 +251,7 @@ section.kaskokapec div.kaskokapec_wrapper div.kaskokapec_section div.kaskokapec_
 
 /* line 5, ../sass/_cenas.scss */
 .cenas {
-  background: url("../img/pattern-light.png");
+  background: url("../img/pattern-medium.png");
   width: 100%;
   height: auto;
   padding: 150px 0 50px;
@@ -274,31 +268,89 @@ section.kaskokapec div.kaskokapec_wrapper div.kaskokapec_section div.kaskokapec_
 /* line 15, ../sass/_cenas.scss */
 .cenas div.cenas_wrapper h1 {
   width: 100%;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #282a2b;
+}
+/* line 21, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper h1:nth-of-type(1n+2) {
+  margin-top: 30px;
+  padding: 100px 0 0;
+  border-top: 1px dashed #7a7873;
+}
+/* line 27, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #7a7873;
+}
+/* line 33, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper h4 {
+  width: 100%;
+  font-size: .8em;
+  margin-top: 0;
   margin-bottom: 20px;
 }
-/* line 19, ../sass/_cenas.scss */
-.cenas div.cenas_wrapper h1:nth-of-type(1n+2) {
-  margin-top: 70px;
+/* line 39, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper h4::before {
+  content: "";
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  border-radius: 100%;
+  border: 2px solid #f8c235;
+  margin-right: 10px;
 }
-/* line 23, ../sass/_cenas.scss */
-.cenas div.cenas_wrapper div.cenu_bloks {
-  width: 48%;
-  height: 120px;
+/* line 50, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper h4.price::after {
+  content: '2,00 EUR';
+  margin-left: 10px;
+  font-size: 1.25em;
+  color: #d83f23;
+}
+/* line 56, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper h4.price2::after {
+  content: '1,60 EUR';
+  margin-left: 10px;
+  font-size: 1.25em;
+  color: #d83f23;
+}
+/* line 63, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper div.cenu_block_colona_top {
+  height: auto;
+  width: 49%;
+  margin-bottom: 50px;
+}
+/* line 69, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks:nth-of-type(even) {
+  background: #f0f0f0;
+  border-left: 1px dashed #7a7873;
+  border-right: 1px dashed #7a7873;
+  border-top: none;
+  border-bottom: none;
+}
+/* line 77, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks:last-of-type {
+  border-bottom: 1px dashed #7a7873;
+}
+/* line 81, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks {
+  width: 100%;
+  height: 80px;
   background: white;
-  margin-bottom: 30px;
-  border: 1px solid #f0f0f0;
+  border: 1px dashed #7a7873;
   transition: .4s;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
-/* line 32, ../sass/_cenas.scss */
-.cenas div.cenas_wrapper div.cenu_bloks:hover {
+/* line 89, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks:hover {
   background: #f8c235;
 }
-/* line 36, ../sass/_cenas.scss */
-.cenas div.cenas_wrapper div.cenu_bloks .cenas_icon {
+/* line 93, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks .cenas_icon {
   width: 120px;
   height: auto;
   padding: 10px;
@@ -308,8 +360,8 @@ section.kaskokapec div.kaskokapec_wrapper div.kaskokapec_section div.kaskokapec_
   display: -ms-flexbox;
   display: flex;
 }
-/* line 43, ../sass/_cenas.scss */
-.cenas div.cenas_wrapper div.cenu_bloks .cenas_icon img {
+/* line 100, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks .cenas_icon img {
   max-width: 100%;
   max-height: 100%;
   -webkit-align-self: center;
@@ -317,8 +369,8 @@ section.kaskokapec div.kaskokapec_wrapper div.kaskokapec_section div.kaskokapec_
   -ms-flex-item-align: center;
   align-self: center;
 }
-/* line 50, ../sass/_cenas.scss */
-.cenas div.cenas_wrapper div.cenu_bloks .cenas_txt {
+/* line 107, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks .cenas_txt {
   margin-right: auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -327,16 +379,16 @@ section.kaskokapec div.kaskokapec_wrapper div.kaskokapec_section div.kaskokapec_
   padding: 0 20px;
   width: 80%;
 }
-/* line 56, ../sass/_cenas.scss */
-.cenas div.cenas_wrapper div.cenu_bloks .cenas_txt h2 {
+/* line 113, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks .cenas_txt h2 {
   font-size: .9em;
   -webkit-align-self: center;
   -moz-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
-/* line 62, ../sass/_cenas.scss */
-.cenas div.cenas_wrapper div.cenu_bloks .cenas_cena {
+/* line 119, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks .cenas_cena {
   width: 100px;
   height: 100%;
   text-align: center;
@@ -352,21 +404,112 @@ section.kaskokapec div.kaskokapec_wrapper div.kaskokapec_section div.kaskokapec_
   justify-content: center;
   border-left: 1px dashed #f0f0f0;
 }
-/* line 71, ../sass/_cenas.scss */
-.cenas div.cenas_wrapper div.cenu_bloks .cenas_cena p {
+/* line 128, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks .cenas_cena p {
   font-size: .75em;
   -webkit-align-self: center;
   -moz-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
-/* line 76, ../sass/_cenas.scss */
-.cenas div.cenas_wrapper div.cenu_bloks .cenas_cena span {
+/* line 133, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks .cenas_cena span {
+  font-size: 1.5em;
+}
+/* line 141, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper div.cenu_block_colona {
+  height: auto;
+  width: 32%;
+  margin-bottom: 30px;
+}
+/* line 147, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper div.cenu_block_colona div.cenu_bloks:nth-of-type(even) {
+  background: #f0f0f0;
+  border-left: 1px dashed #7a7873;
+  border-right: 1px dashed #7a7873;
+  border-top: none;
+  border-bottom: none;
+}
+/* line 155, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper div.cenu_block_colona div#cenu_bloks_special,
+.cenas div.cenas_wrapper div.cenu_block_colona div#cenu_bloks_special2,
+.cenas div.cenas_wrapper div.cenu_block_colona div#cenu_bloks_special3 {
+  color: #f0f0f0;
+  background: #d83f23;
+}
+/* line 161, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper div.cenu_block_colona div#cenu_bloks_special .cenas_cena,
+.cenas div.cenas_wrapper div.cenu_block_colona div#cenu_bloks_special2 .cenas_cena,
+.cenas div.cenas_wrapper div.cenu_block_colona div#cenu_bloks_special3 .cenas_cena {
+  background: #d83f23;
+}
+/* line 166, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper div.cenu_block_colona div.cenu_bloks {
+  width: 100%;
+  height: 50px;
+  background: white;
+  transition: .4s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0;
+  border: 1px dashed #7a7873;
+}
+/* line 175, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper div.cenu_block_colona div.cenu_bloks:hover {
+  background: #f8c235;
+}
+/* line 179, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper div.cenu_block_colona div.cenu_bloks .cenas_txt {
+  margin-right: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20px;
+  width: 80%;
+}
+/* line 185, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper div.cenu_block_colona div.cenu_bloks .cenas_txt h2 {
+  font-size: .9em;
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+/* line 191, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper div.cenu_block_colona div.cenu_bloks .cenas_cena {
+  width: 100px;
+  height: 100%;
+  text-align: center;
+  background: #f8c235;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  border-left: 1px dashed #f0f0f0;
+}
+/* line 200, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper div.cenu_block_colona div.cenu_bloks .cenas_cena p {
+  font-size: .75em;
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+/* line 205, ../sass/_cenas.scss */
+.cenas div.cenas_wrapper div.cenu_block_colona div.cenu_bloks .cenas_cena span {
   font-size: 1.5em;
 }
 
 @media screen and (max-width: 1680px) {
-  /* line 87, ../sass/_cenas.scss */
+  /* line 218, ../sass/_cenas.scss */
   .cenas div.cenas_wrapper {
     width: 90%;
     -webkit-box-pack: justify;
@@ -375,42 +518,77 @@ section.kaskokapec div.kaskokapec_wrapper div.kaskokapec_section div.kaskokapec_
     -moz-justify-content: space-between;
     justify-content: space-between;
   }
-  /* line 91, ../sass/_cenas.scss */
-  .cenas div.cenas_wrapper div.cenu_bloks {
-    width: 48%;
+}
+@media screen and (max-width: 1450px) {
+  /* line 230, ../sass/_cenas.scss */
+  .cenas div.cenas_wrapper h3 {
+    font-size: .9em;
+  }
+  /* line 240, ../sass/_cenas.scss */
+  .cenas div.cenas_wrapper div.cenu_block_colona div.cenu_bloks .cenas_txt h2 {
+    font-size: .7em;
+  }
+  /* line 247, ../sass/_cenas.scss */
+  .cenas div.cenas_wrapper div.cenu_block_colona div.cenu_bloks .cenas_cena span {
+    font-size: 1.25em;
   }
 }
 @media screen and (max-width: 1280px) {
-  /* line 101, ../sass/_cenas.scss */
-  .cenas div.cenas_wrapper {
-    width: 90%;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    -webkit-justify-content: space-between;
-    -moz-justify-content: space-between;
-    justify-content: space-between;
-  }
-  /* line 105, ../sass/_cenas.scss */
-  .cenas div.cenas_wrapper div.cenu_bloks {
+  /* line 262, ../sass/_cenas.scss */
+  .cenas div.cenas_wrapper div.cenu_block_colona {
+    height: auto;
     width: 100%;
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 115, ../sass/_cenas.scss */
+  /* line 273, ../sass/_cenas.scss */
+  .cenas {
+    padding: 100px 0 50px;
+  }
+  /* line 276, ../sass/_cenas.scss */
   .cenas div.cenas_wrapper {
     width: 100%;
   }
-  /* line 118, ../sass/_cenas.scss */
-  .cenas div.cenas_wrapper div.cenu_bloks {
-    width: 100%;
-    margin-bottom: 10px;
+  /* line 279, ../sass/_cenas.scss */
+  .cenas div.cenas_wrapper h3 {
+    padding: 0 0 0 10px;
+    font-size: 1em;
   }
-  /* line 122, ../sass/_cenas.scss */
-  .cenas div.cenas_wrapper div.cenu_bloks .cenas_icon {
+  /* line 284, ../sass/_cenas.scss */
+  .cenas div.cenas_wrapper h1 {
+    font-size: 1.25em;
+    margin-bottom: 40px;
+    text-align: left;
+    margin-left: 10px;
+  }
+  /* line 291, ../sass/_cenas.scss */
+  .cenas div.cenas_wrapper h4 {
+    font-size: .75em;
+    margin-left: 10px;
+  }
+  /* line 295, ../sass/_cenas.scss */
+  .cenas div.cenas_wrapper h4::after {
+    content: "";
+    display: block;
+    margin: 10px 0 0;
+    text-align: left;
+  }
+  /* line 303, ../sass/_cenas.scss */
+  .cenas div.cenas_wrapper div.cenu_block_colona_top {
+    width: 100%;
+  }
+  /* line 306, ../sass/_cenas.scss */
+  .cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks {
+    width: 100%;
+    height: 70px;
+  }
+  /* line 310, ../sass/_cenas.scss */
+  .cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks .cenas_icon {
     width: 80px;
   }
-  /* line 126, ../sass/_cenas.scss */
-  .cenas div.cenas_wrapper div.cenu_bloks .cenas_txt {
+  /* line 314, ../sass/_cenas.scss */
+  .cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks .cenas_txt {
     margin-right: auto;
     display: -webkit-box;
     display: -webkit-flex;
@@ -418,20 +596,20 @@ section.kaskokapec div.kaskokapec_wrapper div.kaskokapec_section div.kaskokapec_
     display: flex;
     padding: 0 20px;
   }
-  /* line 131, ../sass/_cenas.scss */
-  .cenas div.cenas_wrapper div.cenu_bloks .cenas_txt h2 {
+  /* line 319, ../sass/_cenas.scss */
+  .cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks .cenas_txt h2 {
     font-size: .7em;
     -webkit-align-self: center;
     -moz-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
   }
-  /* line 137, ../sass/_cenas.scss */
-  .cenas div.cenas_wrapper div.cenu_bloks .cenas_cena {
-    width: 80px;
+  /* line 325, ../sass/_cenas.scss */
+  .cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks .cenas_cena {
+    width: 100px;
   }
-  /* line 140, ../sass/_cenas.scss */
-  .cenas div.cenas_wrapper div.cenu_bloks .cenas_cena span {
+  /* line 328, ../sass/_cenas.scss */
+  .cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks .cenas_cena span {
     font-size: 1.25em;
   }
 }
@@ -441,8 +619,15 @@ header {
   background: black;
   width: 100vw;
   height: 80px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   position: fixed;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
   justify-content: center;
   z-index: 10;
 }
@@ -450,45 +635,101 @@ header {
 header div.content_wrapper {
   width: 80%;
   height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
-/* line 24, ../sass/global.scss */
+/* line 23, ../sass/global.scss */
 header div.content_wrapper div.logo {
   height: 100%;
   width: 300px;
   margin-right: auto;
 }
-/* line 30, ../sass/global.scss */
+/* line 29, ../sass/global.scss */
 header div.content_wrapper div.logo img {
   width: 40%;
   margin: 12px 0 0;
 }
-/* line 36, ../sass/global.scss */
+/* line 35, ../sass/global.scss */
 header div.content_wrapper nav.main_nav {
   height: 100%;
   width: 60%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
   justify-content: flex-end;
 }
-/* line 43, ../sass/global.scss */
+/* line 42, ../sass/global.scss */
 header div.content_wrapper nav.main_nav a.active_link {
   color: #f8c235;
 }
-/* line 47, ../sass/global.scss */
+/* line 46, ../sass/global.scss */
 header div.content_wrapper nav.main_nav a {
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  -ms-flex-item-align: center;
   align-self: center;
-  margin-left: 35px;
   font-size: .9em;
   color: #f0f0f0;
   transition: 0.15s;
 }
-/* line 54, ../sass/global.scss */
+/* line 52, ../sass/global.scss */
 header div.content_wrapper nav.main_nav a:hover {
   color: #f8c235;
 }
+/* line 57, ../sass/global.scss */
+header div.content_wrapper nav.main_nav a:nth-of-type(even) {
+  margin-left: 35px;
+}
 
+@media screen and (max-width: 600px) {
+  /* line 65, ../sass/global.scss */
+  header {
+    height: 60px;
+  }
+  /* line 68, ../sass/global.scss */
+  header div.content_wrapper {
+    width: 90%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+  }
+  /* line 72, ../sass/global.scss */
+  header div.content_wrapper div.logo {
+    height: 100%;
+    width: 120px;
+    margin-right: 0;
+  }
+  /* line 78, ../sass/global.scss */
+  header div.content_wrapper div.logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  /* line 83, ../sass/global.scss */
+  header div.content_wrapper div.logo a img {
+    width: 70%;
+    max-height: 100%;
+  }
+  /* line 90, ../sass/global.scss */
+  header div.content_wrapper nav.main_nav {
+    width: auto;
+  }
+  /* line 93, ../sass/global.scss */
+  header div.content_wrapper nav.main_nav a:nth-of-type(even) {
+    margin-left: 20px;
+  }
+}
 /*-----------------------------------------------------------------------------------*/
-/* line 67, ../sass/global.scss */
+/* line 106, ../sass/global.scss */
 footer {
   height: 340px;
   background: #282a2b;
@@ -499,11 +740,12 @@ footer {
   -moz-justify-content: center;
   justify-content: center;
 }
-/* line 73, ../sass/global.scss */
-footer div.width_1280 {
+/* line 112, ../sass/global.scss */
+footer div {
   margin-top: 20px;
+  width: 90%;
 }
-/* line 77, ../sass/global.scss */
+/* line 117, ../sass/global.scss */
 footer .social_nav {
   width: 100%;
   -webkit-box-pack: end;
@@ -512,35 +754,35 @@ footer .social_nav {
   -moz-justify-content: flex-end;
   justify-content: flex-end;
 }
-/* line 83, ../sass/global.scss */
+/* line 123, ../sass/global.scss */
 footer .rekviziti {
   width: 50%;
   height: 240px;
   text-align: end;
 }
-/* line 89, ../sass/global.scss */
+/* line 129, ../sass/global.scss */
 footer .rekviziti h4 {
   width: 100%;
   font-size: 16px;
   color: #f0f0f0;
 }
-/* line 94, ../sass/global.scss */
+/* line 134, ../sass/global.scss */
 footer .rekviziti h4 span {
   font-size: .75em;
   color: #7a7873;
 }
-/* line 101, ../sass/global.scss */
+/* line 141, ../sass/global.scss */
 footer .fb-like-box {
   width: 50%;
 }
-/* line 105, ../sass/global.scss */
+/* line 145, ../sass/global.scss */
 footer .fb_iframe_widget {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
-/* line 109, ../sass/global.scss */
+/* line 149, ../sass/global.scss */
 footer .fb_iframe_widget span {
   margin: 0 auto;
   min-width: 100%;
@@ -549,12 +791,12 @@ footer .fb_iframe_widget span {
   -ms-flex-item-align: center;
   align-self: center;
 }
-/* line 115, ../sass/global.scss */
+/* line 155, ../sass/global.scss */
 footer .fb_iframe_widget span iframe {
   min-width: 100%;
   padding-top: 30px;
 }
-/* line 123, ../sass/global.scss */
+/* line 163, ../sass/global.scss */
 footer .copyrights {
   width: 100%;
   -webkit-align-self: flex-end;
@@ -565,36 +807,36 @@ footer .copyrights {
   background: rgba(0, 0, 0, 0.35);
   border-top: 1px solid #2c2f29;
 }
-/* line 130, ../sass/global.scss */
+/* line 170, ../sass/global.scss */
 footer .copyrights a, footer .copyrights p {
   margin: 10px;
   color: #7a7873;
   font-size: 14px;
 }
-/* line 136, ../sass/global.scss */
+/* line 176, ../sass/global.scss */
 footer .copyrights a {
   transition: .35s;
 }
-/* line 139, ../sass/global.scss */
+/* line 179, ../sass/global.scss */
 footer .copyrights a:hover {
   color: white;
 }
-/* line 144, ../sass/global.scss */
+/* line 184, ../sass/global.scss */
 footer .copyrights ul {
   padding: 0;
   margin: 0;
 }
 
 @media screen and (max-width: 800px) {
-  /* line 153, ../sass/global.scss */
+  /* line 193, ../sass/global.scss */
   footer {
-    height: 560px;
+    height: 600px;
   }
-  /* line 156, ../sass/global.scss */
-  footer div.width_1280 {
+  /* line 196, ../sass/global.scss */
+  footer div {
     margin-top: 0;
   }
-  /* line 160, ../sass/global.scss */
+  /* line 200, ../sass/global.scss */
   footer .social_nav {
     width: auto;
     -webkit-box-pack: center;
@@ -603,26 +845,27 @@ footer .copyrights ul {
     -moz-justify-content: center;
     justify-content: center;
   }
-  /* line 165, ../sass/global.scss */
+  /* line 205, ../sass/global.scss */
   footer .rekviziti {
     width: 100%;
     height: 240px;
     order: 2;
     text-align: left;
   }
-  /* line 172, ../sass/global.scss */
+  /* line 212, ../sass/global.scss */
   footer .rekviziti h4 {
     font-size: 14px;
   }
-  /* line 177, ../sass/global.scss */
+  /* line 217, ../sass/global.scss */
   footer .fb-like-box {
     width: 100%;
+    margin-bottom: 30px;
   }
-  /* line 185, ../sass/global.scss */
+  /* line 226, ../sass/global.scss */
   footer .fb_iframe_widget span iframe {
     padding-top: 30px;
   }
-  /* line 191, ../sass/global.scss */
+  /* line 232, ../sass/global.scss */
   footer .copyrights {
     height: auto;
   }

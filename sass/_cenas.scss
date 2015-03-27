@@ -3,7 +3,7 @@
 
 
 .cenas {
-  background: url("../img/pattern-light.png");
+  background: url("../img/pattern-medium.png");
   width: 100%;
   height: auto;
   padding: 150px 0 50px;
@@ -14,70 +14,201 @@
 
     h1 {
       width: 100%;
+      margin-bottom: 50px;
+      text-align: center;
+      color: $main_color-dark-grey;
+    }
+    h1:nth-of-type(1n+2){
+      margin-top: 30px;
+      padding: 100px 0 0;
+      border-top: 1px dashed $main_color-medium-grey;
+    }
+
+    h3 {
+      width: 100%;
       margin-bottom: 20px;
-    }
-    h1:nth-of-type(1n+2) {
-      margin-top: 70px;
+      color: $main_color-medium-grey;
     }
 
-    div.cenu_bloks {
-      width: 48%;
-      height: 120px;
-      background: white;
+    h4 {
+      width: 100%;
+      font-size: .8em;
+      margin-top: 0;
+      margin-bottom: 20px;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        height: 14px;
+        width: 14px;
+        border-radius: 100%;
+        border: 2px solid $main_color;
+        margin-right: 10px;
+      }
+    }
+
+    h4.price::after {
+      content: '2,00 EUR';
+      margin-left: 10px;
+      font-size: 1.25em;
+      color: $warning_color;
+    }
+    h4.price2::after {
+      content: '1,60 EUR';
+      margin-left: 10px;
+      font-size: 1.25em;
+      color: $warning_color;
+    }
+
+    div.cenu_block_colona_top {
+      //background: red;
+      height: auto;
+      width: 49%;
+      margin-bottom: 50px;
+
+      div.cenu_bloks:nth-of-type(even){
+        background: $main_color-mono-light;
+        border-left: 1px dashed $main_color-medium-grey;
+        border-right: 1px dashed $main_color-medium-grey;
+        border-top: none;
+        border-bottom: none;
+      }
+
+      div.cenu_bloks:last-of-type {
+        border-bottom: 1px dashed $main_color-medium-grey;
+      }
+
+      div.cenu_bloks {
+        width: 100%;
+        height: 80px;
+        background: white;
+        border: 1px dashed $main_color-medium-grey;
+        transition: .4s;
+        @include flexbox;
+
+        &:hover {
+          background: $main_color;
+        }
+
+        .cenas_icon {
+          width: 120px;
+          height: auto;
+          padding: 10px;
+          border-right: 1px dashed $main_color-mono-light;
+          @include flexbox;
+
+          img {
+            max-width: 100%;
+            max-height: 100%;
+            @include align-self(center);
+          }
+        }
+
+        .cenas_txt {
+          margin-right: auto;
+          @include flexbox;
+          padding: 0 20px;
+          width: 80%;
+
+          h2 {
+            font-size: .9em;
+            @include align-self(center);
+          }
+        }
+
+        .cenas_cena {
+          width: 100px;
+          height: 100%;
+          text-align: center;
+          background: $main_color;
+          @include flexbox;
+          @include justify-content(center);
+          border-left: 1px dashed $main_color-mono-light;
+
+          p {
+            font-size: .75em;
+            @include align-self(center);
+          }
+
+          span {
+            font-size: 1.5em;
+          }
+        }
+      }
+    }
+
+
+    div.cenu_block_colona {
+      //background: red;
+      height: auto;
+      width: 32%;
       margin-bottom: 30px;
-      border: 1px solid $main_color-mono-light;
-      transition: .4s;
-      @include flexbox;
 
-      &:hover {
-        background: $main_color;
+      div.cenu_bloks:nth-of-type(even){
+        background: $main_color-mono-light;
+        border-left: 1px dashed $main_color-medium-grey;
+        border-right: 1px dashed $main_color-medium-grey;
+        border-top: none;
+        border-bottom: none;
       }
 
-      .cenas_icon {
-        width: 120px;
-        height: auto;
-        padding: 10px;
-        border-right: 1px dashed $main_color-mono-light;
-        @include flexbox;
+      div#cenu_bloks_special,
+      div#cenu_bloks_special2,
+      div#cenu_bloks_special3 {
+        color: $main_color-mono-light;
+        background: $warning_color;
 
-        img {
-          max-width: 100%;
-          max-height: 100%;
-          @include align-self(center);
+        .cenas_cena {
+          background: $warning_color;
         }
       }
 
-      .cenas_txt {
-        margin-right: auto;
+      div.cenu_bloks {
+        width: 100%;
+        height: 50px;
+        background: white;
+        transition: .4s;
         @include flexbox;
-        padding: 0 20px;
-        width: 80%;
+        margin-bottom: 0;
+        border: 1px dashed $main_color-medium-grey;
 
-        h2 {
-          font-size: .9em;
-          @include align-self(center);
-        }
-      }
-
-      .cenas_cena {
-        width: 100px;
-        height: 100%;
-        text-align: center;
-        background: $main_color;
-        @include flexbox;
-        @include justify-content(center);
-        border-left: 1px dashed $main_color-mono-light;
-
-        p {
-          font-size: .75em;
-          @include align-self(center);
+        &:hover {
+          background: $main_color;
         }
 
-        span {
-          font-size: 1.5em;
+        .cenas_txt {
+          margin-right: auto;
+          @include flexbox;
+          padding: 0 20px;
+          width: 80%;
+
+          h2 {
+            font-size: .9em;
+            @include align-self(center);
+          }
+        }
+
+        .cenas_cena {
+          width: 100px;
+          height: 100%;
+          text-align: center;
+          background: $main_color;
+          @include flexbox;
+          @include justify-content(center);
+          border-left: 1px dashed $main_color-mono-light;
+
+          p {
+            font-size: .75em;
+            @include align-self(center);
+          }
+
+          span {
+            font-size: 1.5em;
+          }
         }
       }
     }
+
   }
 }
 
@@ -87,9 +218,37 @@
     div.cenas_wrapper {
       width: 90%;
       @include justify-content(space-between);
+    }
+  }
+}
 
-      div.cenu_bloks {
-        width: 48%;
+@media screen and (max-width: 1450px) {
+  .cenas {
+
+    div.cenas_wrapper {
+
+      h3 {
+        font-size: .9em;
+      }
+
+      div.cenu_block_colona {
+
+        div.cenu_bloks {
+
+          .cenas_txt {
+
+            h2 {
+              font-size: .7em;
+            }
+          }
+
+          .cenas_cena {
+
+            span {
+              font-size: 1.25em;
+            }
+          }
+        }
       }
     }
   }
@@ -99,11 +258,12 @@
   .cenas {
 
     div.cenas_wrapper {
-      width: 90%;
-      @include justify-content(space-between);
 
-      div.cenu_bloks {
+      div.cenu_block_colona {
+        //background: red;
+        height: auto;
         width: 100%;
+        margin-bottom: 30px;
       }
     }
   }
@@ -111,34 +271,63 @@
 
 @media screen and (max-width: 700px){
   .cenas {
+    padding: 100px 0 50px;
 
     div.cenas_wrapper {
       width: 100%;
 
-      div.cenu_bloks {
+      h3 {
+        padding: 0 0 0 10px;
+        font-size: 1em;
+      }
+
+      h1 {
+        font-size: 1.25em;
+        margin-bottom: 40px;
+        text-align: left;
+        margin-left: 10px;
+      }
+
+      h4 {
+        font-size: .75em;
+        margin-left: 10px;
+
+        &::after {
+          content: "";
+          display: block;
+          margin: 10px 0 0;
+          text-align: left;
+        }
+      }
+
+      div.cenu_block_colona_top {
         width: 100%;
-        margin-bottom: 10px;
 
-        .cenas_icon {
-          width: 80px;
-        }
+        div.cenu_bloks {
+          width: 100%;
+          height: 70px;
 
-        .cenas_txt {
-          margin-right: auto;
-          @include flexbox;
-          padding: 0 20px;
-
-          h2 {
-            font-size: .7em;
-            @include align-self(center);
+          .cenas_icon {
+            width: 80px;
           }
-        }
 
-        .cenas_cena {
-          width: 80px;
+          .cenas_txt {
+            margin-right: auto;
+            @include flexbox;
+            padding: 0 20px;
 
-          span {
-            font-size: 1.25em;
+            h2 {
+              font-size: .7em;
+              @include align-self(center);
+            }
+          }
+
+          .cenas_cena {
+            width: 100px;
+
+            span {
+              font-size: 1.25em;
+            }
           }
         }
       }

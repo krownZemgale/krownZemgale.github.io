@@ -10,16 +10,15 @@ header {
   background: black;
   width: 100vw;
   height: 80px;
-  display: flex;
+  @include flexbox;
   position: fixed;
-  justify-content: center;
+  @include justify-content(center);
   z-index: 10;
 
   div.content_wrapper {
     width: 80%;
     height: 100%;
-    //background: red;
-    display: flex;
+    @include flexbox;
 
     div.logo {
       height: 100%;
@@ -37,22 +36,62 @@ header {
       //background: orange;
       height: 100%;
       width: 60%;
-      display: flex;
-      justify-content: flex-end;
+      @include flexbox;
+      @include justify-content(flex-end);
 
       a.active_link {
         color: $main_color;
       }
 
       a {
-        align-self: center;
-        margin-left: 35px;
+        @include align-self(center);
         font-size: .9em;
         color: $main_color-mono-light;
         transition: 0.15s;
 
         &:hover {
           color: $main_color;
+        }
+      }
+
+      a:nth-of-type(even){
+        margin-left: 35px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  header {
+    height: 60px;
+
+    div.content_wrapper {
+      width: 90%;
+      @include justify-content(space-between);
+
+      div.logo {
+        height: 100%;
+        width: 120px;
+        //background: blue;
+        margin-right: 0;
+
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+
+          img {
+            width: 70%;
+            max-height: 100%;
+          }
+        }
+      }
+
+      nav.main_nav {
+        width: auto;
+
+        a:nth-of-type(even){
+          margin-left: 20px;
         }
       }
     }
@@ -70,8 +109,9 @@ footer {
   width: 100%;
   @include justify-content(center);
 
-  div.width_1280 {
+  div {
     margin-top: 20px;
+    width: 90%;
   }
 
   .social_nav {
@@ -151,9 +191,9 @@ footer {
 
 @media screen and (max-width: 800px){
   footer {
-    height: 560px;
+    height: 600px;
 
-    div.width_1280 {
+    div {
       margin-top: 0;
     }
 
@@ -176,6 +216,7 @@ footer {
 
     .fb-like-box {
       width: 100%;
+      margin-bottom: 30px;
     }
 
     .fb_iframe_widget {
