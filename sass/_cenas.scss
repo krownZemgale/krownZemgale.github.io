@@ -269,6 +269,18 @@
   }
 }
 
+@media screen and (max-width: 950px){
+  .cenas {
+
+    div.cenas_wrapper {
+
+      div.cenu_block_colona_top {
+        width: 100%;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 700px){
   .cenas {
     padding: 100px 0 50px;

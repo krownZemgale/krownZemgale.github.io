@@ -10,7 +10,9 @@ function initialize() {
         navigationControl: false,
         mapTypeControl: false,
         scaleControl: false,
-        scrollwheel: false
+        scrollwheel: false,
+        draggable: false,
+        panControl: true
     };
 
     map = new google.maps.Map(document.getElementById('google_map'),

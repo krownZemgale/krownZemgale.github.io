@@ -17,6 +17,15 @@ $main-h1-size: 30px;
   color: $main_color-dark-grey;
 }
 
+.main_color {
+  color: $main_color;
+}
+
+.warning_color {
+  color: $warning_color;
+}
+
+
 .vertical_center {
   align-self: center;
 }
