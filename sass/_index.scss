@@ -234,13 +234,16 @@ section.par_mums {
 
   h5, p {
     width: 90%;
-    text-align: center;
+    text-align: justify;
   }
 
   h5 {
-    font-size: 1.25em;
+    font-size: .9em;
     margin: 20px 0 10px;
     color: $main_color-mono-light;
+    line-height: 1.5em;
+    @include align-self(flex-start);
+    height: auto;
   }
 
   p {
@@ -250,17 +253,20 @@ section.par_mums {
   }
 
   div.par_mums_bloks {
-    width: 20%;
+    width: 60%;
     height: auto;
-    margin: 50px 20px 0;
+    margin: 20px 0 0;
 
     .par_mums_img {
-      width: 60%;
+      width: 800px;
       height: auto;
+      margin: 30px 0;
 
       img {
         width: 100%;
         max-height: 100%;
+        border-radius: 10px;
+        border: 2px solid $main_color;
       }
     }
   }
@@ -270,23 +276,10 @@ section.par_mums {
   section.par_mums {
 
     div.par_mums_bloks {
-      width: 30%;
+      width: 60%;
 
       .par_mums_img {
-        width: 40%;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  section.par_mums {
-
-    div.par_mums_bloks {
-      width: 40%;
-
-      .par_mums_img {
-        width: 30%;
+        width: 80%;
       }
     }
   }
@@ -299,7 +292,7 @@ section.par_mums {
       width: 100%;
 
       .par_mums_img {
-        width: 20%;
+        width: 80%;
       }
     }
   }
@@ -360,6 +353,17 @@ section.par_mums {
       p {
         font-size: .8em;
         color: $main_color-medium-grey;
+        text-align: justify;
+
+        span {
+          color: $warning_color;
+          font-size: 1.25em;
+
+          a {
+            color: inherit;
+            font-style: italic;
+          }
+        }
       }
     }
   }
@@ -441,7 +445,7 @@ section.par_mums {
       height: auto;
       @include align-self(center);
 
-      video {
+      img {
         max-width: 100%;
         max-height: 100%;
         border-radius: 100%;
@@ -481,6 +485,7 @@ section.par_mums {
         color: $main_color-medium-grey;
         font-size: .8em;
         margin-bottom: 50px;
+        text-align: justify;
       }
       p:last-of-type {
         margin-bottom: 0;

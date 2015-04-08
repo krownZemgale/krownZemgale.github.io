@@ -96,6 +96,7 @@
           padding: 10px;
           border-right: 1px dashed $main_color-mono-light;
           @include flexbox;
+          @include justify-content(center);
 
           img {
             max-width: 100%;

@@ -116,7 +116,7 @@ div.generic_h1 h1 {
 @media screen and (max-width: 600px) {
   /* line 100, ../sass/_imports.scss */
   h1 {
-    margin-bottom: 40px;
+    /*margin-bottom: 40px;*/
     font-size: 30px;
   }
 
@@ -350,76 +350,75 @@ section.par_mums {
 /* line 235, ../sass/_index.scss */
 section.par_mums h5, section.par_mums p {
   width: 90%;
-  text-align: center;
+  text-align: justify;
 }
 /* line 240, ../sass/_index.scss */
 section.par_mums h5 {
-  font-size: 1.25em;
+  font-size: .9em;
   margin: 20px 0 10px;
   color: #f0f0f0;
+  line-height: 1.5em;
+  -webkit-align-self: flex-start;
+  -moz-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  height: auto;
 }
-/* line 246, ../sass/_index.scss */
+/* line 249, ../sass/_index.scss */
 section.par_mums p {
   font-size: .8em;
   margin-bottom: 30px;
   color: #7a7873;
 }
-/* line 252, ../sass/_index.scss */
+/* line 255, ../sass/_index.scss */
 section.par_mums div.par_mums_bloks {
-  width: 20%;
-  height: auto;
-  margin: 50px 20px 0;
-}
-/* line 257, ../sass/_index.scss */
-section.par_mums div.par_mums_bloks .par_mums_img {
   width: 60%;
   height: auto;
+  margin: 20px 0 0;
 }
-/* line 261, ../sass/_index.scss */
+/* line 260, ../sass/_index.scss */
+section.par_mums div.par_mums_bloks .par_mums_img {
+  width: 800px;
+  height: auto;
+  margin: 30px 0;
+}
+/* line 265, ../sass/_index.scss */
 section.par_mums div.par_mums_bloks .par_mums_img img {
   width: 100%;
   max-height: 100%;
+  border-radius: 10px;
+  border: 2px solid #f8c235;
 }
 
 @media screen and (max-width: 1500px) {
-  /* line 272, ../sass/_index.scss */
+  /* line 278, ../sass/_index.scss */
   section.par_mums div.par_mums_bloks {
-    width: 30%;
+    width: 60%;
   }
-  /* line 275, ../sass/_index.scss */
+  /* line 281, ../sass/_index.scss */
   section.par_mums div.par_mums_bloks .par_mums_img {
-    width: 40%;
-  }
-}
-@media screen and (max-width: 1280px) {
-  /* line 285, ../sass/_index.scss */
-  section.par_mums div.par_mums_bloks {
-    width: 40%;
-  }
-  /* line 288, ../sass/_index.scss */
-  section.par_mums div.par_mums_bloks .par_mums_img {
-    width: 30%;
+    width: 80%;
   }
 }
 @media screen and (max-width: 900px) {
-  /* line 298, ../sass/_index.scss */
+  /* line 291, ../sass/_index.scss */
   section.par_mums div.par_mums_bloks {
     width: 100%;
   }
-  /* line 301, ../sass/_index.scss */
+  /* line 294, ../sass/_index.scss */
   section.par_mums div.par_mums_bloks .par_mums_img {
-    width: 20%;
+    width: 80%;
   }
 }
 /*-----------------------------------------------------------------------------------*/
-/* line 313, ../sass/_index.scss */
+/* line 306, ../sass/_index.scss */
 .pakalpojumi {
   width: 100%;
   height: auto;
   background: url("../img/pattern-light.png");
   padding-bottom: 50px;
 }
-/* line 321, ../sass/_index.scss */
+/* line 314, ../sass/_index.scss */
 .pakalpojumi .pakalpojumi_box:nth-of-type(odd) .pakalpojumi_vid {
   -webkit-box-ordinal-group: 3;
   -webkit-order: 2;
@@ -427,7 +426,7 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
   -ms-flex-order: 2;
   order: 2;
 }
-/* line 325, ../sass/_index.scss */
+/* line 318, ../sass/_index.scss */
 .pakalpojumi .pakalpojumi_box:nth-of-type(odd) .pakalpojumi_txt {
   -webkit-box-ordinal-group: 2;
   -webkit-order: 1;
@@ -436,13 +435,13 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
   order: 1;
   text-align: right;
 }
-/* line 331, ../sass/_index.scss */
+/* line 324, ../sass/_index.scss */
 .pakalpojumi .pakalpojumi_box {
   width: 60%;
   height: auto;
   margin: 30px 0;
 }
-/* line 337, ../sass/_index.scss */
+/* line 330, ../sass/_index.scss */
 .pakalpojumi .pakalpojumi_box .pakalpojumi_vid {
   width: 30%;
   height: auto;
@@ -451,14 +450,14 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
   -ms-flex-item-align: center;
   align-self: center;
 }
-/* line 342, ../sass/_index.scss */
+/* line 335, ../sass/_index.scss */
 .pakalpojumi .pakalpojumi_box .pakalpojumi_vid video {
   max-width: 100%;
   max-height: 100%;
   border-radius: 100%;
   border: 2px solid #282a2b;
 }
-/* line 350, ../sass/_index.scss */
+/* line 343, ../sass/_index.scss */
 .pakalpojumi .pakalpojumi_box .pakalpojumi_txt {
   width: 64%;
   height: auto;
@@ -468,35 +467,46 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
   align-self: center;
   padding-right: 20px;
 }
-/* line 356, ../sass/_index.scss */
+/* line 349, ../sass/_index.scss */
 .pakalpojumi .pakalpojumi_box .pakalpojumi_txt h4 {
   font-size: 1.25em;
 }
-/* line 360, ../sass/_index.scss */
+/* line 353, ../sass/_index.scss */
 .pakalpojumi .pakalpojumi_box .pakalpojumi_txt p {
   font-size: .8em;
   color: #7a7873;
+  text-align: justify;
+}
+/* line 358, ../sass/_index.scss */
+.pakalpojumi .pakalpojumi_box .pakalpojumi_txt p span {
+  color: #d83f23;
+  font-size: 1.25em;
+}
+/* line 362, ../sass/_index.scss */
+.pakalpojumi .pakalpojumi_box .pakalpojumi_txt p span a {
+  color: inherit;
+  font-style: italic;
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 371, ../sass/_index.scss */
+  /* line 375, ../sass/_index.scss */
   .pakalpojumi .pakalpojumi_box {
     width: 90%;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 378, ../sass/_index.scss */
+  /* line 382, ../sass/_index.scss */
   .pakalpojumi {
     width: 100%;
     height: auto;
     background: url("../img/pattern-light.png");
     padding-bottom: 50px;
   }
-  /* line 384, ../sass/_index.scss */
+  /* line 388, ../sass/_index.scss */
   .pakalpojumi h1 {
     margin-bottom: 0;
   }
-  /* line 390, ../sass/_index.scss */
+  /* line 394, ../sass/_index.scss */
   .pakalpojumi .pakalpojumi_box:nth-of-type(odd) .pakalpojumi_vid {
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
@@ -504,7 +514,7 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
     -ms-flex-order: 1;
     order: 1;
   }
-  /* line 394, ../sass/_index.scss */
+  /* line 398, ../sass/_index.scss */
   .pakalpojumi .pakalpojumi_box:nth-of-type(odd) .pakalpojumi_txt {
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
@@ -513,11 +523,11 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
     order: 2;
     text-align: center;
   }
-  /* line 400, ../sass/_index.scss */
+  /* line 404, ../sass/_index.scss */
   .pakalpojumi .pakalpojumi_box:nth-of-type(-n+2) {
     margin-top: 50px;
   }
-  /* line 404, ../sass/_index.scss */
+  /* line 408, ../sass/_index.scss */
   .pakalpojumi .pakalpojumi_box {
     width: 90%;
     margin: 100px 0 0;
@@ -528,25 +538,25 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
     justify-content: center;
     text-align: center;
   }
-  /* line 410, ../sass/_index.scss */
+  /* line 414, ../sass/_index.scss */
   .pakalpojumi .pakalpojumi_box .pakalpojumi_vid {
     width: 60%;
     margin-bottom: 20px;
   }
-  /* line 415, ../sass/_index.scss */
+  /* line 419, ../sass/_index.scss */
   .pakalpojumi .pakalpojumi_box .pakalpojumi_txt {
     width: 80%;
     padding-right: 0;
   }
 }
 /*-----------------------------------------------------------------------------------*/
-/* line 428, ../sass/_index.scss */
+/* line 432, ../sass/_index.scss */
 .atputas_zona {
   width: 100%;
   height: auto;
   background: #282a2b;
 }
-/* line 433, ../sass/_index.scss */
+/* line 437, ../sass/_index.scss */
 .atputas_zona .atputas_zona_wrapper {
   padding: 100px 0;
   width: 80%;
@@ -556,7 +566,7 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
   -moz-justify-content: space-between;
   justify-content: space-between;
 }
-/* line 439, ../sass/_index.scss */
+/* line 443, ../sass/_index.scss */
 .atputas_zona .atputas_zona_wrapper .atputas_zona_vid {
   width: 40%;
   height: auto;
@@ -565,24 +575,24 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
   -ms-flex-item-align: center;
   align-self: center;
 }
-/* line 444, ../sass/_index.scss */
-.atputas_zona .atputas_zona_wrapper .atputas_zona_vid video {
+/* line 448, ../sass/_index.scss */
+.atputas_zona .atputas_zona_wrapper .atputas_zona_vid img {
   max-width: 100%;
   max-height: 100%;
   border-radius: 100%;
   border: 2px solid #f8c235;
 }
-/* line 452, ../sass/_index.scss */
+/* line 456, ../sass/_index.scss */
 .atputas_zona .atputas_zona_wrapper .atputas_zona_txt {
   width: 55%;
   height: auto;
   color: #f0f0f0;
 }
-/* line 458, ../sass/_index.scss */
+/* line 462, ../sass/_index.scss */
 .atputas_zona .atputas_zona_wrapper .atputas_zona_txt h4 {
   font-size: 1em;
 }
-/* line 461, ../sass/_index.scss */
+/* line 465, ../sass/_index.scss */
 .atputas_zona .atputas_zona_wrapper .atputas_zona_txt h4::before {
   content: "";
   display: inline-block;
@@ -593,23 +603,24 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
   margin-right: 10px;
   transition: .4s;
 }
-/* line 474, ../sass/_index.scss */
+/* line 478, ../sass/_index.scss */
 .atputas_zona .atputas_zona_wrapper .atputas_zona_txt h4:hover::before {
   background: #f8c235;
 }
-/* line 480, ../sass/_index.scss */
+/* line 484, ../sass/_index.scss */
 .atputas_zona .atputas_zona_wrapper .atputas_zona_txt p {
   color: #7a7873;
   font-size: .8em;
   margin-bottom: 50px;
+  text-align: justify;
 }
-/* line 485, ../sass/_index.scss */
+/* line 490, ../sass/_index.scss */
 .atputas_zona .atputas_zona_wrapper .atputas_zona_txt p:last-of-type {
   margin-bottom: 0;
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 495, ../sass/_index.scss */
+  /* line 500, ../sass/_index.scss */
   .atputas_zona .atputas_zona_wrapper {
     width: 90%;
     -webkit-box-pack: center;
@@ -619,17 +630,17 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
     justify-content: center;
     padding: 60px 0;
   }
-  /* line 500, ../sass/_index.scss */
+  /* line 505, ../sass/_index.scss */
   .atputas_zona .atputas_zona_wrapper .atputas_zona_vid {
     margin-bottom: 50px;
   }
-  /* line 504, ../sass/_index.scss */
+  /* line 509, ../sass/_index.scss */
   .atputas_zona .atputas_zona_wrapper .atputas_zona_txt {
     width: 80%;
   }
 }
 @media screen and (max-width: 900px) {
-  /* line 514, ../sass/_index.scss */
+  /* line 519, ../sass/_index.scss */
   .atputas_zona .atputas_zona_wrapper {
     width: 90%;
     -webkit-box-pack: center;
@@ -638,17 +649,17 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
     -moz-justify-content: center;
     justify-content: center;
   }
-  /* line 518, ../sass/_index.scss */
+  /* line 523, ../sass/_index.scss */
   .atputas_zona .atputas_zona_wrapper .atputas_zona_vid {
     width: 60%;
   }
-  /* line 522, ../sass/_index.scss */
+  /* line 527, ../sass/_index.scss */
   .atputas_zona .atputas_zona_wrapper .atputas_zona_txt {
     width: 90%;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 532, ../sass/_index.scss */
+  /* line 537, ../sass/_index.scss */
   .atputas_zona .atputas_zona_wrapper {
     width: 90%;
     -webkit-box-pack: center;
@@ -657,17 +668,17 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
     -moz-justify-content: center;
     justify-content: center;
   }
-  /* line 536, ../sass/_index.scss */
+  /* line 541, ../sass/_index.scss */
   .atputas_zona .atputas_zona_wrapper .atputas_zona_vid {
     width: 80%;
   }
-  /* line 540, ../sass/_index.scss */
+  /* line 545, ../sass/_index.scss */
   .atputas_zona .atputas_zona_wrapper .atputas_zona_txt {
     width: 90%;
   }
 }
 /*-----------------------------------------------------------------------------------*/
-/* line 552, ../sass/_index.scss */
+/* line 557, ../sass/_index.scss */
 .mums_uzticas {
   height: auto;
   width: 100%;
@@ -686,7 +697,7 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
   -moz-justify-content: center;
   justify-content: center;
 }
-/* line 560, ../sass/_index.scss */
+/* line 565, ../sass/_index.scss */
 .mums_uzticas div.mums_uzticas_wrapper {
   width: 80%;
   height: 100%;
@@ -705,13 +716,13 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
   justify-content: center;
   padding: 50px 0;
 }
-/* line 570, ../sass/_index.scss */
+/* line 575, ../sass/_index.scss */
 .mums_uzticas div.partner_img {
   width: auto;
   height: 80px;
   margin: 30px;
 }
-/* line 575, ../sass/_index.scss */
+/* line 580, ../sass/_index.scss */
 .mums_uzticas div.partner_img img {
   max-width: 100%;
   max-height: 100%;
@@ -719,25 +730,25 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
   filter: grayscale(1) opacity(0.5);
   transition: .4s;
 }
-/* line 582, ../sass/_index.scss */
+/* line 587, ../sass/_index.scss */
 .mums_uzticas div.partner_img img:hover {
   -webkit-filter: grayscale(0.2) opacity(1);
   filter: grayscale(0.2) opacity(1);
 }
 
 @media screen and (max-width: 500px) {
-  /* line 593, ../sass/_index.scss */
+  /* line 598, ../sass/_index.scss */
   .mums_uzticas div.mums_uzticas_wrapper {
     padding: 0 0 50px;
   }
-  /* line 597, ../sass/_index.scss */
+  /* line 602, ../sass/_index.scss */
   .mums_uzticas div.partner_img {
     height: 40px;
     margin: 30px;
   }
 }
 /*-----------------------------------------------------------------------------------*/
-/* line 609, ../sass/_index.scss */
+/* line 614, ../sass/_index.scss */
 #google_map {
   width: 100%;
   height: 600px;
@@ -854,8 +865,13 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
 }
-/* line 100, ../sass/_cenas.scss */
+/* line 101, ../sass/_cenas.scss */
 .cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks .cenas_icon img {
   max-width: 100%;
   max-height: 100%;
@@ -864,7 +880,7 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
   -ms-flex-item-align: center;
   align-self: center;
 }
-/* line 107, ../sass/_cenas.scss */
+/* line 108, ../sass/_cenas.scss */
 .cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks .cenas_txt {
   margin-right: auto;
   display: -webkit-box;
@@ -874,7 +890,7 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
   padding: 0 20px;
   width: 80%;
 }
-/* line 113, ../sass/_cenas.scss */
+/* line 114, ../sass/_cenas.scss */
 .cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks .cenas_txt h2 {
   font-size: .9em;
   -webkit-align-self: center;
@@ -882,7 +898,7 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
   -ms-flex-item-align: center;
   align-self: center;
 }
-/* line 119, ../sass/_cenas.scss */
+/* line 120, ../sass/_cenas.scss */
 .cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks .cenas_cena {
   width: 100px;
   height: 100%;
@@ -899,7 +915,7 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
   justify-content: center;
   border-left: 1px dashed #f0f0f0;
 }
-/* line 128, ../sass/_cenas.scss */
+/* line 129, ../sass/_cenas.scss */
 .cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks .cenas_cena p {
   font-size: .75em;
   -webkit-align-self: center;
@@ -907,17 +923,17 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
   -ms-flex-item-align: center;
   align-self: center;
 }
-/* line 133, ../sass/_cenas.scss */
+/* line 134, ../sass/_cenas.scss */
 .cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks .cenas_cena span {
   font-size: 1.5em;
 }
-/* line 141, ../sass/_cenas.scss */
+/* line 142, ../sass/_cenas.scss */
 .cenas div.cenas_wrapper div.cenu_block_colona {
   height: auto;
   width: 32%;
   margin-bottom: 30px;
 }
-/* line 147, ../sass/_cenas.scss */
+/* line 148, ../sass/_cenas.scss */
 .cenas div.cenas_wrapper div.cenu_block_colona div.cenu_bloks:nth-of-type(even) {
   background: #f0f0f0;
   border-left: 1px dashed #7a7873;
@@ -925,20 +941,20 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
   border-top: none;
   border-bottom: none;
 }
-/* line 155, ../sass/_cenas.scss */
+/* line 156, ../sass/_cenas.scss */
 .cenas div.cenas_wrapper div.cenu_block_colona div#cenu_bloks_special,
 .cenas div.cenas_wrapper div.cenu_block_colona div#cenu_bloks_special2,
 .cenas div.cenas_wrapper div.cenu_block_colona div#cenu_bloks_special3 {
   color: #f0f0f0;
   background: #d83f23;
 }
-/* line 161, ../sass/_cenas.scss */
+/* line 162, ../sass/_cenas.scss */
 .cenas div.cenas_wrapper div.cenu_block_colona div#cenu_bloks_special .cenas_cena,
 .cenas div.cenas_wrapper div.cenu_block_colona div#cenu_bloks_special2 .cenas_cena,
 .cenas div.cenas_wrapper div.cenu_block_colona div#cenu_bloks_special3 .cenas_cena {
   background: #d83f23;
 }
-/* line 166, ../sass/_cenas.scss */
+/* line 167, ../sass/_cenas.scss */
 .cenas div.cenas_wrapper div.cenu_block_colona div.cenu_bloks {
   width: 100%;
   height: 50px;
@@ -951,11 +967,11 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
   margin-bottom: 0;
   border: 1px dashed #7a7873;
 }
-/* line 175, ../sass/_cenas.scss */
+/* line 176, ../sass/_cenas.scss */
 .cenas div.cenas_wrapper div.cenu_block_colona div.cenu_bloks:hover {
   background: #f8c235;
 }
-/* line 179, ../sass/_cenas.scss */
+/* line 180, ../sass/_cenas.scss */
 .cenas div.cenas_wrapper div.cenu_block_colona div.cenu_bloks .cenas_txt {
   margin-right: auto;
   display: -webkit-box;
@@ -965,7 +981,7 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
   padding: 0 20px;
   width: 80%;
 }
-/* line 185, ../sass/_cenas.scss */
+/* line 186, ../sass/_cenas.scss */
 .cenas div.cenas_wrapper div.cenu_block_colona div.cenu_bloks .cenas_txt h2 {
   font-size: .9em;
   -webkit-align-self: center;
@@ -973,7 +989,7 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
   -ms-flex-item-align: center;
   align-self: center;
 }
-/* line 191, ../sass/_cenas.scss */
+/* line 192, ../sass/_cenas.scss */
 .cenas div.cenas_wrapper div.cenu_block_colona div.cenu_bloks .cenas_cena {
   width: 100px;
   height: 100%;
@@ -990,7 +1006,7 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
   justify-content: center;
   border-left: 1px dashed #f0f0f0;
 }
-/* line 200, ../sass/_cenas.scss */
+/* line 201, ../sass/_cenas.scss */
 .cenas div.cenas_wrapper div.cenu_block_colona div.cenu_bloks .cenas_cena p {
   font-size: .75em;
   -webkit-align-self: center;
@@ -998,13 +1014,13 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
   -ms-flex-item-align: center;
   align-self: center;
 }
-/* line 205, ../sass/_cenas.scss */
+/* line 206, ../sass/_cenas.scss */
 .cenas div.cenas_wrapper div.cenu_block_colona div.cenu_bloks .cenas_cena span {
   font-size: 1.5em;
 }
 
 @media screen and (max-width: 1680px) {
-  /* line 218, ../sass/_cenas.scss */
+  /* line 219, ../sass/_cenas.scss */
   .cenas div.cenas_wrapper {
     width: 90%;
     -webkit-box-pack: justify;
@@ -1015,21 +1031,21 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
   }
 }
 @media screen and (max-width: 1450px) {
-  /* line 230, ../sass/_cenas.scss */
+  /* line 231, ../sass/_cenas.scss */
   .cenas div.cenas_wrapper h3 {
     font-size: .9em;
   }
-  /* line 240, ../sass/_cenas.scss */
+  /* line 241, ../sass/_cenas.scss */
   .cenas div.cenas_wrapper div.cenu_block_colona div.cenu_bloks .cenas_txt h2 {
     font-size: .7em;
   }
-  /* line 247, ../sass/_cenas.scss */
+  /* line 248, ../sass/_cenas.scss */
   .cenas div.cenas_wrapper div.cenu_block_colona div.cenu_bloks .cenas_cena span {
     font-size: 1.25em;
   }
 }
 @media screen and (max-width: 1280px) {
-  /* line 262, ../sass/_cenas.scss */
+  /* line 263, ../sass/_cenas.scss */
   .cenas div.cenas_wrapper div.cenu_block_colona {
     height: auto;
     width: 100%;
@@ -1037,58 +1053,58 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
   }
 }
 @media screen and (max-width: 950px) {
-  /* line 277, ../sass/_cenas.scss */
+  /* line 278, ../sass/_cenas.scss */
   .cenas div.cenas_wrapper div.cenu_block_colona_top {
     width: 100%;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 285, ../sass/_cenas.scss */
+  /* line 286, ../sass/_cenas.scss */
   .cenas {
     padding: 100px 0 50px;
   }
-  /* line 288, ../sass/_cenas.scss */
+  /* line 289, ../sass/_cenas.scss */
   .cenas div.cenas_wrapper {
     width: 100%;
   }
-  /* line 291, ../sass/_cenas.scss */
+  /* line 292, ../sass/_cenas.scss */
   .cenas div.cenas_wrapper h3 {
     padding: 0 0 0 10px;
     font-size: 1em;
   }
-  /* line 296, ../sass/_cenas.scss */
+  /* line 297, ../sass/_cenas.scss */
   .cenas div.cenas_wrapper h1 {
     font-size: 1.25em;
     margin-bottom: 40px;
     text-align: left;
     margin-left: 10px;
   }
-  /* line 303, ../sass/_cenas.scss */
+  /* line 304, ../sass/_cenas.scss */
   .cenas div.cenas_wrapper h4 {
     font-size: .75em;
     margin-left: 10px;
   }
-  /* line 307, ../sass/_cenas.scss */
+  /* line 308, ../sass/_cenas.scss */
   .cenas div.cenas_wrapper h4::after {
     content: "";
     display: block;
     margin: 10px 0 0;
     text-align: left;
   }
-  /* line 315, ../sass/_cenas.scss */
+  /* line 316, ../sass/_cenas.scss */
   .cenas div.cenas_wrapper div.cenu_block_colona_top {
     width: 100%;
   }
-  /* line 318, ../sass/_cenas.scss */
+  /* line 319, ../sass/_cenas.scss */
   .cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks {
     width: 100%;
     height: 70px;
   }
-  /* line 322, ../sass/_cenas.scss */
+  /* line 323, ../sass/_cenas.scss */
   .cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks .cenas_icon {
     width: 80px;
   }
-  /* line 326, ../sass/_cenas.scss */
+  /* line 327, ../sass/_cenas.scss */
   .cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks .cenas_txt {
     margin-right: auto;
     display: -webkit-box;
@@ -1097,7 +1113,7 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
     display: flex;
     padding: 0 20px;
   }
-  /* line 331, ../sass/_cenas.scss */
+  /* line 332, ../sass/_cenas.scss */
   .cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks .cenas_txt h2 {
     font-size: .7em;
     -webkit-align-self: center;
@@ -1105,11 +1121,11 @@ section.par_mums div.par_mums_bloks .par_mums_img img {
     -ms-flex-item-align: center;
     align-self: center;
   }
-  /* line 337, ../sass/_cenas.scss */
+  /* line 338, ../sass/_cenas.scss */
   .cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks .cenas_cena {
     width: 100px;
   }
-  /* line 340, ../sass/_cenas.scss */
+  /* line 341, ../sass/_cenas.scss */
   .cenas div.cenas_wrapper div.cenu_block_colona_top div.cenu_bloks .cenas_cena span {
     font-size: 1.25em;
   }
@@ -1242,7 +1258,7 @@ footer {
   justify-content: center;
 }
 /* line 112, ../sass/global.scss */
-footer div {
+footer div.footer_container {
   margin-top: 20px;
   width: 90%;
 }
@@ -1258,7 +1274,7 @@ footer .social_nav {
 /* line 123, ../sass/global.scss */
 footer .rekviziti {
   width: 50%;
-  height: 240px;
+  height: auto;
   text-align: end;
 }
 /* line 129, ../sass/global.scss */
@@ -1331,10 +1347,10 @@ footer .copyrights ul {
 @media screen and (max-width: 800px) {
   /* line 193, ../sass/global.scss */
   footer {
-    height: 600px;
+    height: 620px;
   }
   /* line 196, ../sass/global.scss */
-  footer div {
+  footer div.footer_container {
     margin-top: 0;
   }
   /* line 200, ../sass/global.scss */
