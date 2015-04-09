@@ -332,11 +332,15 @@ section.par_mums {
       height: auto;
       @include align-self(center);
 
-      video {
+      video, img {
         max-width: 100%;
         max-height: 100%;
         border-radius: 100%;
         border: 2px solid $main_color-dark-grey;
+      }
+
+      img {
+        display: none;
       }
     }
 
@@ -374,6 +378,17 @@ section.par_mums {
 
     .pakalpojumi_box {
       width: 90%;
+
+      video {
+        display: none;
+      }
+
+      .pakalpojumi_vid {
+
+        img {
+          display: block;
+        }
+      }
     }
   }
 }
